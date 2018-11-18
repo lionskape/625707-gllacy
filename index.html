@@ -17,20 +17,22 @@
       </ul>
 
       <ul class="user-navigation">
-        <li><button class="user-navigation-button search-button"></button></li>
+        <li><a href="#" class="user-navigation-button search-button"></a></li>
         <li><a href="#" class="user-navigation-button login-button">Вход</a></li>
-        <li><button class="user-navigation-button basket-button">Пусто</button></li>
+        <li><a href="#" class="user-navigation-button basket-button">Пусто</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="base-container">
-    <h1 class="visually-hidden">Иагазин Глейси</h1>
+    <h1 class="visually-hidden">Магазин Глейси</h1>
     <section class="advantage">
-      <h2 class="visually-hidden">Преемущества</h2>
-      <b>
-        Магазин Глэйси - это онлайн - и офлайн-магазин по продаже мороженого собственного производства.
-      </b>
+      <h2 class="visually-hidden">Преимущества</h2>
+      <p>
+        <strong>
+          Магазин Глэйси - это онлайн - и офлайн-магазин по продаже мороженого собственного производства.
+        </strong>
+      </p>
       <ul class="advantage-list">
         <li class="advantage-item">
           <img src="img/noname1.svg" width="30" height="30" alt="Вкусный пломбир">
@@ -59,34 +61,34 @@
       </ul>
     </section>
     <article class="blog-info">
-      <h3>
+      <h3 class="blog-info-header">
         Новое в нашем блоге
       </h3>
-      <span>
+      <p>
         <a href="#">
           10 способов сервировки фруктовых щербетов к столу
         </a>
-      </span>
+      </p>
     </article>
     <section class="subscribe-form">
       <p>
         Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
       </p>
-      <input type="text">
-      <button class="send-btn">Отправить</button>
+      <form>
+        <input type="text" required name="subscribe-form">
+        <button type="submit" class="send-btn">Отправить</button>
+      </form>
     </section>
   </main>
   <footer class="main-footer">
-    <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Twitter</a></li>
-          <li><a class="social-button" href="#">Instagram</a></li>
-          <li><a class="social-button" href="#">Facebook</a></li>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-        </ul>
-    </div>
+    <ul class="footer-social-media-list">
+      <li class="footer-social-media-item"><a class="social-button" href="#">Twitter</a></li>
+      <li class="footer-social-media-item"><a class="social-button" href="#">Instagram</a></li>
+      <li class="footer-social-media-item"><a class="social-button" href="#">Facebook</a></li>
+      <li class="footer-social-media-item"><a class="social-button" href="#">Вконтакте</a></li>
+    </ul>
     <ul class="footer-contact-list">
-      <li class="footer-contact-item">
+      <li class="footer-contact-item for-suppliers">
         <img src="img/hurt.svg" width="10" height="10" alt="Сердечко">
         <a href="#">Для поставщиков</a>
       </li>
