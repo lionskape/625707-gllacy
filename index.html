@@ -8,7 +8,7 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
-        <img src="img/header-img/logo.svg" width="154" height="64" alt="Магазин 'Gllacy Shop'">
+        <img src="img/header-img/logo.svg" width="154" height="64" alt="Логотип магазина 'Gllacy Shop'">
       </a>
       <ul class="site-navigation">
         <li><a href="#">Каталог</a></li>
@@ -19,7 +19,7 @@
       <ul class="user-navigation">
         <li>
           <a class="user-navigation-button search-button">
-            <img src="img/header-img/loop.svg" width="17" height="17" alt="Loop">
+            <img src="img/header-img/loop.svg" width="17" height="17" alt="Кнопка поиска">
           </a>
         </li>
         <li>
@@ -38,20 +38,85 @@
 
   <main class="base-container">
     <h1 class="visually-hidden">Магазин Глейси</h1>
+
+    <section class="modal catalog-modal">
+      <ul class="main-catalog-modal-list">
+        <li class="main-catalog-modal-item">
+          <a href="#" class="catalog-modal-link catalog-modal-link-checked">Новинки</a>
+        </li>
+        <li class="main-catalog-modal-item">
+          <a href="#" class="catalog-modal-link">Cливочное</a>
+        </li>
+        <li class="main-catalog-modal-item">
+          <a href="#" class="catalog-modal-link">Щеребты</a>
+        </li>
+        <li class="main-catalog-modal-item">
+          <a href="#" class="catalog-modal-link">Фруктовый лед</a>
+        </li>
+        <li class="main-catalog-modal-item">
+          <a href="#" class="catalog-modal-link">Мелорин</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="modal search-modal">
+        <form class="search-form" action="#" method="post">
+          <input class="search-modal-field" type="text" name="search" placeholder="Что ищем?">
+        </form>
+      </section>
+
+    <section class="modal modal-login">
+      <h2 class="visually-hidden">Личный кабинет</h2>
+      <form class="login-form" action="#" method="post">
+        <p>
+          <input class="login-user" type="text" name="login" placeholder="Электронная почта">
+        </p>
+        <p>
+          <input class="login-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p class="login-password-info">
+          <a class="btn send-btn" href="#">Войти</a>
+          <p class="forget-password">
+            <a href="#" class="forget-password-link">Забыли пароль?</a>
+          </p>
+          <p class="new-user">
+            <a href="#" class="new-user-link">Новая регистрация</a>
+          </p>
+        </p>
+      </form>
+    </section>
+
+    <section class="modal appointment-modal">
+      <h1>Мы обязательно вам ответим!</h1>
+      <form class="appointment-form">
+        <p class="appointment-item">
+          <input type="text" placeholder="Как вас зовут?">
+        </p>
+        <p class="appointment-item">
+          <input type="text" placeholder="Ваша почта для ответа?">
+        </p>
+        <p class="appointment-item">
+          <textarea rows="10" cols="30" name="text" placeholder="Напишите что-нибудь..."></textarea>
+        </p>
+        <button class="btn send-btn" type="submit">Отправить</button>
+      </form>
+    </section>
+
     <article class="banner">
       <h2 class="main-banner">Малинка даром !</h2>
       <p class="banner-text-content">
         При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
       </p>
-      <a href="#" class="send-btn banner-btn">Хочу варенье!</a>
+      <a href="#" class="btn send-btn banner-btn">Хочу варенье!</a>
     </article>
     <article class="banner">
       <h2 class="main-banner">Шоколадки даром !</h2>
       <p class="banner-text-content">
         При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
       </p>
-      <a href="#" class="send-btn banner-btn">Хочу шоколадки!</a>
+      <a href="#" class="btn send-btn banner-btn">Хочу шоколадки!</a>
     </article>
+
     <section class="main-hit-catalog">
       <ul class="main-hit-catalog-list">
         <li class="main-hit-catalog-item">
@@ -116,6 +181,7 @@
         </li>
       </ul>
     </section>
+
     <section class="advantage">
       <h2 class="visually-hidden">Преимущества</h2>
       <p>
@@ -150,6 +216,7 @@
         </li>
       </ul>
     </section>
+
     <article class="blog-info">
       <h3 class="blog-info-header">
         Новое в нашем блоге
@@ -166,13 +233,14 @@
       </p>
       <form>
         <input type="text" required name="subscribe-form">
-        <button type="submit" class="send-btn">Отправить</button>
+        <button type="submit" class="btn send-btn">Отправить</button>
       </form>
     </section>
     <section class="main-map">
       <img  src="img/map/pin.svg" class="ice-cream-pin" width="140" height="80">
     </section>
   </main>
+
   <footer class="main-footer">
     <ul class="footer-social-media-list">
       <li class="footer-social-media-item">
@@ -196,6 +264,7 @@
         </a>
       </li>
     </ul>
+
     <ul class="footer-contact-list">
       <li class="footer-contact-item for-suppliers">
         <img src="img/footer-hurt.svg" width="15" height="13" alt="Сердечко">
