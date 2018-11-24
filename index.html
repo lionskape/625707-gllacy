@@ -59,7 +59,7 @@
             <h2 class="visually-hidden">Вход в личный кабинет</h2>
             <form class="login-form" action="#" method="post">
               <label>
-                <input class="popup-email-user" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" minlength="" placeholder="Электронная почта" required>
+                <input class="popup-email-user" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" placeholder="Электронная почта" required>
                 Электронная почта
               </label>
               <label>
@@ -217,7 +217,7 @@
         Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
       </p>
       <form class="subscribe-form" action="#" method="post">
-        <input type="email" required name="subscribe-form">
+        <input type="email" required name="subscribe-form" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
         <button type="submit" class="btn send-btn subscribe-send-btn">Отправить</button>
       </form>
     </section>
@@ -282,7 +282,8 @@
         Как вас зовут?
       </label>
       <label class="appointment-item">
-        <input type="email" name="user-email" id="user-email-modal-field" placeholder="Ваша почта для ответа?">
+        <input type="email" name="user-email" id="user-email-modal-field 
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ваша почта для ответа?" required>
         Ваша почта для ответа?
       </label>
       <label class="appointment-item">
