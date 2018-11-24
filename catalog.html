@@ -31,34 +31,46 @@
           <a class="user-navigation-button basket-button">
             <img src="img/header-img/catalog-basket.svg" width="21" height="20" alt="Корзина товаров">
             <span class="catalog-basket-text">2 товара</span>
-            <section class="modal basket-modal">
-              <ul class="basket-list">
-                <li class="basket-items">
-                  <p>
-                    <img src="img/basket-modal-pic/basket-item-close.svg" width="11" height="11" alt="Удалить товар">
-                    <img src="img/basket-modal-pic/orange-basket.jpg" width="33" height="33" alt="Изображение товара">
-                    <p class="ice-cream-count"><b>1,5 кг х</b> 200 руб</p>
-                    <b>300 руб</b>
-                  </p>
-                </li>
-                <li class="basket-items">
-                  <p>
-                    <img src="img/basket-modal-pic/basket-item-close.svg" width="11" height="11" alt="Удалить товар">
-                    <img src="img/basket-modal-pic/strawberry-basket.jpg" width="33" height="33" alt="Изображение товара">
-                    <p class="ice-cream-count"><b>1,5 кг х</b> 300 руб</p>
-                    <b>450 руб</b>
-                  </p>
-                </li>
-              </ul>
-              <form class="basket-order-form" action="#" method="post">
-                <p class="basket-order-total-price">
+          </a>
+          <section class="popup basket-catalog-popup">
+              <table class="basket-catalog-list">
+                  <tr class="basket-catalog-items">
+                      <td>
+                          <img src="img/basket-modal-pic/basket-item-close.svg" width="11" height="11" alt="Удалить товар">
+                      </td>
+                      <td>
+                          <img src="img/basket-modal-pic/orange-basket.jpg" width="33" height="33" alt="Изображение товара">
+                      </td>
+                      <td>
+                          <p class="ice-cream-count"><b>1,5 кг х</b> 200 руб</p>
+                      </td>
+                      <td>
+                          <b>300 руб</b>
+                      </td>
+                  </tr>
+                  <tr class="basket-catalog-items">
+                      <td>
+                          <img src="img/basket-modal-pic/basket-item-close.svg" width="11" height="11" alt="Удалить товар">
+                      </td>
+                      <td>
+                          <img src="img/basket-modal-pic/strawberry-basket.jpg" width="33" height="33" alt="Изображение товара">
+                      </td>
+                      <td>
+                          <p class="ice-cream-count"><b>1,5 кг х</b> 300 руб</p>
+                      </td>
+                      <td>
+                          <b>450 руб</b>
+                      </td>
+                  </tr>
+              </table>
+              <form class="basket-catalog-order-form" action="#" method="post">
+                  <p class="basket-catalog-order-total-price">
                   <b>Итого</b>
                   <b>750 руб</b>
-                </p>
-                <a class="btn send-btn basket-order-btn" href="#">Оформить заказ</a>
+                  </p>
+                  <a class="btn send-btn basket-order-btn" href="#">Оформить заказ</a>
               </form>
-            </section>
-          </a>
+          </section>
         </li>
       </ul>
     </nav>

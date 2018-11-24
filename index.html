@@ -42,6 +42,14 @@
           <a class="user-navigation-button search-button">
             <img src="img/header-img/loop.svg" width="17" height="17" alt="Кнопка поиска">
           </a>
+          <section class="popup search-popup">
+            <form class="search-form" action="#" method="post">
+              <label>
+                  <input class="search-popup-field"  type="search" name="search" pattern=".{1,}" placeholder="Что ищем?" required>
+                  Что ищем?
+              </label>
+            </form>
+          </section>
         </li>
         <li class="user-main-navigation-item user-navigation-popup">
           <a href="#" class="user-navigation-button login-button">
@@ -50,16 +58,16 @@
           <section class="popup popup-login">
             <h2 class="visually-hidden">Вход в личный кабинет</h2>
             <form class="login-form" action="#" method="post">
-              <p>
-                <input class="login-user" id="login-user-field" type="text" name="login" placeholder="Электронная почта">
-                <label for="login-user-field" class="visually-hidden">Электронная почта</label>
-              </p>
-              <p>
-                <input class="login-password" id="login-password-field" type="password" name="password" placeholder="Пароль">
-                <label for="login-password-field" class="visually-hidden">Пароль</label>
-              </p>
+              <label>
+                <input class="popup-email-user" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" minlength="" placeholder="Электронная почта" required>
+                Электронная почта
+              </label>
+              <label>
+                <input class="popup-password" type="password" name="password" pattern=".{6,}" placeholder="Пароль" required>
+                Пароль
+              </label>
               <p class="login-password-info">
-                <a class="btn send-btn login-send-btn" href="#">Войти</a>
+                <button class="btn send-btn login-send-btn" type="submit">Войти</button>
                 <a href="#" class="forget-password-link">Забыли пароль?</a>
                 <a href="#" class="new-user-link">Новая регистрация</a>
               </p>
@@ -71,12 +79,6 @@
             <img src="img/header-img/basket.svg" width="21" height="20" alt="Корзина товаров">
             <span class="main-basket-text">Пусто</span>
           </a>
-          <section class="popup search-popup">
-            <form class="search-form" action="#" method="post">
-              <input class="search-popup-field" id="search-popup-input-field" type="search" name="search" placeholder="Что ищем?">
-              <label for="search-popup-input-field">Что ищем?</label>
-            </form>
-          </section>
         </li>
       </ul>
     </nav>
@@ -275,18 +277,18 @@
       <img src="img/big-close.svg" width="18" height="17" alt="Закрать модальное окно для свзяи">
     </button>
     <form class="appointment-form" action="#" method="post">
-      <p class="appointment-item">
+      <label class="appointment-item">
         <input type="text" name="user-name" id="user-name-modal-field" placeholder="Как вас зовут?">
-        <label for="user-name-modal-field">Как вас зовут?</label>
-      </p>
-      <p class="appointment-item">
+        Как вас зовут?
+      </label>
+      <label class="appointment-item">
         <input type="email" name="user-email" id="user-email-modal-field" placeholder="Ваша почта для ответа?">
-        <label for="user-email-modal-field">Ваша почта для ответа?</label>
-      </p>
-      <p class="appointment-item">
+        Ваша почта для ответа?
+      </label>
+      <label class="appointment-item">
         <textarea rows="10" cols="30" id="user-text-modal-field" name="user-text" placeholder="Напишите что-нибудь..."></textarea>
-        <label for="user-text-modal-field">Напишите что-нибудь...</label>
-      </p>
+        Напишите что-нибудь...
+      </label>
       <button class="btn send-btn appointment-send-btn"  type="submit">Отправить</button>
     </form>
   </section>
