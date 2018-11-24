@@ -11,26 +11,72 @@
         <img src="img/header-img/logo.svg" width="154" height="64" alt="Логотип магазина 'Gllacy Shop'">
       </a>
       <ul class="site-navigation">
-        <li><a href="#">Каталог</a></li>
+        <li>
+          <a href="#">Каталог</a>
+          <section class="popup catalog-popup">
+            <ul class="main-catalog-popup-list">
+              <li class="main-catalog-modal-item">
+                <a href="#" class="catalog-popup-link catalog-popup-link-header">Новинки</a>
+              </li>
+              <li class="main-catalog-popup-item">
+                <a href="#" class="catalog-popup-link">Cливочное</a>
+              </li>
+              <li class="main-catalog-popup-item">
+                <a href="#" class="catalog-popup-link">Щеребты</a>
+              </li>
+              <li class="main-catalog-popup-item">
+                <a href="#" class="catalog-popup-link">Фруктовый лед</a>
+              </li>
+              <li class="main-catalog-popup-item">
+                <a href="#" class="catalog-popup-link">Мелорин</a>
+              </li>
+            </ul>
+          </section>
+        </li>
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О Компании</a></li>
       </ul>
 
-      <ul class="user-navigation">
-        <li>
+      <ul class="user-main-navigation-list">
+        <li class="user-main-navigation-item">
           <a class="user-navigation-button search-button">
             <img src="img/header-img/loop.svg" width="17" height="17" alt="Кнопка поиска">
           </a>
         </li>
-        <li>
+        <li class="user-main-navigation-item user-navigation-popup">
           <a href="#" class="user-navigation-button login-button">
             <img src="img/header-img/login-pic.svg" width="21" height="19" alt="Кнопка входа в аккаунт">
           </a>
+          <section class="popup popup-login">
+            <h2 class="visually-hidden">Вход в личный кабинет</h2>
+            <form class="login-form" action="#" method="post">
+              <p>
+                <input class="login-user" id="login-user-field" type="text" name="login" placeholder="Электронная почта">
+                <label for="login-user-field" class="visually-hidden">Электронная почта</label>
+              </p>
+              <p>
+                <input class="login-password" id="login-password-field" type="password" name="password" placeholder="Пароль">
+                <label for="login-password-field" class="visually-hidden">Пароль</label>
+              </p>
+              <p class="login-password-info">
+                <a class="btn send-btn login-send-btn" href="#">Войти</a>
+                <a href="#" class="forget-password-link">Забыли пароль?</a>
+                <a href="#" class="new-user-link">Новая регистрация</a>
+              </p>
+            </form>
+          </section>
         </li>
-        <li>
+        <li class="user-main-navigation-item user-navigation-popup">
           <a class="user-navigation-button basket-button">
             <img src="img/header-img/basket.svg" width="21" height="20" alt="Корзина товаров">
+            <span class="main-basket-text">Пусто</span>
           </a>
+          <section class="popup search-popup">
+            <form class="search-form" action="#" method="post">
+              <input class="search-popup-field" id="search-popup-input-field" type="search" name="search" placeholder="Что ищем?">
+              <label for="search-popup-input-field">Что ищем?</label>
+            </form>
+          </section>
         </li>
       </ul>
     </nav>
@@ -38,69 +84,6 @@
 
   <main class="base-container">
     <h1 class="visually-hidden">Магазин Глейси</h1>
-
-    <section class="modal catalog-modal">
-      <ul class="main-catalog-modal-list">
-        <li class="main-catalog-modal-item">
-          <a href="#" class="catalog-modal-link catalog-modal-link-checked">Новинки</a>
-        </li>
-        <li class="main-catalog-modal-item">
-          <a href="#" class="catalog-modal-link">Cливочное</a>
-        </li>
-        <li class="main-catalog-modal-item">
-          <a href="#" class="catalog-modal-link">Щеребты</a>
-        </li>
-        <li class="main-catalog-modal-item">
-          <a href="#" class="catalog-modal-link">Фруктовый лед</a>
-        </li>
-        <li class="main-catalog-modal-item">
-          <a href="#" class="catalog-modal-link">Мелорин</a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="modal search-modal">
-        <form class="search-form" action="#" method="post">
-          <input class="search-modal-field" type="text" name="search" placeholder="Что ищем?">
-        </form>
-      </section>
-
-    <section class="modal modal-login">
-      <h2 class="visually-hidden">Личный кабинет</h2>
-      <form class="login-form" action="#" method="post">
-        <p>
-          <input class="login-user" type="text" name="login" placeholder="Электронная почта">
-        </p>
-        <p>
-          <input class="login-password" type="password" name="password" placeholder="Пароль">
-        </p>
-        <p class="login-password-info">
-          <a class="btn send-btn login-send-btn" href="#">Войти</a>
-          <p class="forget-password">
-            <a href="#" class="forget-password-link">Забыли пароль?</a>
-          </p>
-          <p class="new-user">
-            <a href="#" class="new-user-link">Новая регистрация</a>
-          </p>
-        </p>
-      </form>
-    </section>
-
-    <section class="modal appointment-modal">
-      <h1>Мы обязательно вам ответим!</h1>
-      <form class="appointment-form">
-        <p class="appointment-item">
-          <input type="text" placeholder="Как вас зовут?">
-        </p>
-        <p class="appointment-item">
-          <input type="text" placeholder="Ваша почта для ответа?">
-        </p>
-        <p class="appointment-item">
-          <textarea rows="10" cols="30" name="text" placeholder="Напишите что-нибудь..."></textarea>
-        </p>
-        <button class="btn send-btn appointment-send-btn" type="submit">Отправить</button>
-      </form>
-    </section>
 
     <article class="banner">
       <h2 class="main-banner">Малинка даром !</h2>
@@ -227,12 +210,12 @@
         </a>
       </p>
     </article>
-    <section class="subscribe-form">
+    <section class="subscribe-sect">
       <p>
         Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
       </p>
-      <form>
-        <input type="text" required name="subscribe-form">
+      <form class="subscribe-form" action="#" method="post">
+        <input type="email" required name="subscribe-form">
         <button type="submit" class="btn send-btn subscribe-send-btn">Отправить</button>
       </form>
     </section>
@@ -246,21 +229,25 @@
       <li class="footer-social-media-item">
         <a class="social-button twitter-index-button" href="#">
           <img src="img/social-img/twitter.svg" width="32" height="32" alt="Twitter">
+          <span class="visually-hidden">Twitter</span>
         </a>
       </li>
       <li class="footer-social-media-item">
         <a class="social-button instagram-index-button" href="#">
           <img src="img/social-img/instagram.svg" width="32" height="32" alt="Instagram">
+          <span class="visually-hidden">Instagram</span>
         </a>
       </li>
       <li class="footer-social-media-item">
         <a class="social-button facebook-index-button" href="#">
           <img src="img/social-img/facebook.svg" width="32" height="32" alt="Facebook">
+          <span class="visually-hidden">Facebook</span>
         </a>
       </li>
       <li class="footer-social-media-item">
         <a class="social-button vk-index-button" href="#">
           <img src="img/social-img/vkontakte.svg" width="32" height="32" alt="Вконтакте">
+          <span class="visually-hidden">Вконтакте</span>
         </a>
       </li>
     </ul>
@@ -281,6 +268,29 @@
       <p>Cделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
     </p>
   </footer>
+
+  <section class="modal appointment-modal">
+    <h1>Мы обязательно вам ответим!</h1>
+    <button aria-label="Закрать окно для свзяи">
+      <img src="img/big-close.svg" width="18" height="17" alt="Закрать модальное окно для свзяи">
+    </button>
+    <form class="appointment-form" action="#" method="post">
+      <p class="appointment-item">
+        <input type="text" name="user-name" id="user-name-modal-field" placeholder="Как вас зовут?">
+        <label for="user-name-modal-field">Как вас зовут?</label>
+      </p>
+      <p class="appointment-item">
+        <input type="email" name="user-email" id="user-email-modal-field" placeholder="Ваша почта для ответа?">
+        <label for="user-email-modal-field">Ваша почта для ответа?</label>
+      </p>
+      <p class="appointment-item">
+        <textarea rows="10" cols="30" id="user-text-modal-field" name="user-text" placeholder="Напишите что-нибудь..."></textarea>
+        <label for="user-text-modal-field">Напишите что-нибудь...</label>
+      </p>
+      <button class="btn send-btn appointment-send-btn"  type="submit">Отправить</button>
+    </form>
+  </section>
+
 </body>
 
 </html>

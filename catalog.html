@@ -16,20 +16,48 @@
         <li><a href="#">О Компании</a></li>
       </ul>
 
-      <ul class="user-navigation">
-        <li>
+      <ul class="user-catalog-navigation-list">
+        <li class="user-catalog-navigation-item">
           <a href="#" class="user-navigation-button search-button">
             <img src="img/header-img/loop.svg" width="17" height="17" alt="Loop">
           </a>
         </li>
-        <li>
+        <li class="user-catalog-navigation-item">
           <a href="#" class="user-navigation-button login-button">
             <img src="img/header-img/login-pic.svg" width="21" height="19" alt="Кнопка входа в аккаунт">
           </a>
         </li>
-        <li>
+        <li class="user-catalog-navigation-item user-catalog-navigation-popup">
           <a class="user-navigation-button basket-button">
             <img src="img/header-img/catalog-basket.svg" width="21" height="20" alt="Корзина товаров">
+            <span class="catalog-basket-text">2 товара</span>
+            <section class="modal basket-modal">
+              <ul class="basket-list">
+                <li class="basket-items">
+                  <p>
+                    <img src="img/basket-modal-pic/basket-item-close.svg" width="11" height="11" alt="Удалить товар">
+                    <img src="img/basket-modal-pic/orange-basket.jpg" width="33" height="33" alt="Изображение товара">
+                    <p class="ice-cream-count"><b>1,5 кг х</b> 200 руб</p>
+                    <b>300 руб</b>
+                  </p>
+                </li>
+                <li class="basket-items">
+                  <p>
+                    <img src="img/basket-modal-pic/basket-item-close.svg" width="11" height="11" alt="Удалить товар">
+                    <img src="img/basket-modal-pic/strawberry-basket.jpg" width="33" height="33" alt="Изображение товара">
+                    <p class="ice-cream-count"><b>1,5 кг х</b> 300 руб</p>
+                    <b>450 руб</b>
+                  </p>
+                </li>
+              </ul>
+              <form class="basket-order-form" action="#" method="post">
+                <p class="basket-order-total-price">
+                  <b>Итого</b>
+                  <b>750 руб</b>
+                </p>
+                <a class="btn send-btn basket-order-btn" href="#">Оформить заказ</a>
+              </form>
+            </section>
           </a>
         </li>
       </ul>
@@ -37,33 +65,6 @@
   </header>
   <main class="base-container">
 
-    <section class="modal basket-modal">
-      <ul class="basket-list">
-        <li class="basket-items">
-          <p>
-            <img src="img/basket-modal-pic/basket-item-close.svg" width="11" height="11" alt="Удалить товар">
-            <img src="img/basket-modal-pic/orange-basket.jpg" width="33" height="33" alt="Изображение товара">
-            <p class="ice-cream-count"><b>1,5 кг х</b> 200 руб</p>
-            <b>300 руб</b>
-          </p>
-        </li>
-        <li class="basket-items">
-          <p>
-            <img src="img/basket-modal-pic/basket-item-close.svg" width="11" height="11" alt="Удалить товар">
-            <img src="img/basket-modal-pic/strawberry-basket.jpg" width="33" height="33" alt="Изображение товара">
-            <p class="ice-cream-count"><b>1,5 кг х</b> 300 руб</p>
-            <b>450 руб</b>
-          </p>
-        </li>
-      </ul>
-      <form class="basket-order-form" action="#" method="post">
-        <p class="basket-order-total-price">
-          <b>Итого</b>
-          <b>750 руб</b>
-        </p>
-        <a class="btn send-btn basket-order-btn" href="#">Оформить заказ</a>
-      </form>
-    </section>
     <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог</a></li>
@@ -264,21 +265,25 @@
       <li class="footer-social-media-item">
         <a class="social-button twitter-catalog-button" href="#">
           <img src="img/social-img/twitter.svg" width="32" height="32" alt="Twitter">
+          <span class="visually-hidden">Twitter</span>
         </a>
       </li>
       <li class="footer-social-media-item">
         <a class="social-button instagram-catalog-button" href="#">
           <img src="img/social-img/instagram.svg" width="32" height="32" alt="Instagram">
+          <span class="visually-hidden">Instagram</span>
         </a>
       </li>
       <li class="footer-social-media-item">
         <a class="social-button facebook-catalog-button" href="#">
           <img src="img/social-img/facebook.svg" width="32" height="32" alt="Facebook">
+          <span class="visually-hidden">Facebook</span>
         </a>
       </li>
       <li class="footer-social-media-item">
         <a class="social-button vk-catalog-button" href="#">
           <img src="img/social-img/vkontakte.svg" width="32" height="32" alt="Вконтакте">
+          <span class="visually-hidden">Вконтакте</span>
         </a>
       </li>
     </ul>
