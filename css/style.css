@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: normal;
+    font-weight: 700;
+    color: #ffffff;
+
+    background-color: #849d8f;    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.send-btn {
+    font: inherit;
+
+    text-align: center;
+    color: #ffffff;
+  
+    background-color: rgb(239, 95, 63);
+    border: none;
+}
+
+.send-btn:hover,
+.send-btn:focus {
+    color: #fefefe;
+    background-color: #f26843;
+}
+
+.send-btn:active {
+    color: #fceeec;
+    box-shadow: 0px 2px 2px 0 #ac1000;
+}
+
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #849d8f;
+}
+
+.site-navigation-list,
+.user-main-navigation-list {
+    list-style: none;
+}
+
+.main-catalog-popup ul {
+    list-style: none;
+}
+
+.site-navigation-list a,
+.user-main-navigation-list a {
+    color: #ffffff;
+}
+
+/* .site-navigation-item a {
+    text-decoration: underline;
+}
+
+.catalog-popup-link {
+    text-decoration: none;
+} */
+
+.site-navigation-list a:hover,
+.site-navigation-list a:focus,
+.user-main-navigation-list a:hover,
+.user-main-navigation-list a:focus {
+    background-color: #ffffff;
+    color: black;
+}
+
+
+.advantage {
+    color: #000000;
+
+    background-color: rgb(238, 227, 201);
+    background-image: url("../img/background/advantage-background.png");
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.advantage strong {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.advantage-list {
+    list-style: none;
+}
+
+.advantage-item p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.blog-info {
+    color: #000000;
+    font-size: 16px;
+    line-height: 22px;
+
+    background-color: rgb(255, 255, 255);
+    background-image: url("../img/background/banner-1.jpg");
+    background-position: 0 0;
+
+    height: 229px;
+    width: 560px;
+}
+
+.blog-info a {
+    color: #000000;
+    text-decoration: underline;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.subscribe-sect {
+    background-image: url("../img/background/banner-2.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    height: 229px;
+    width: 560px;
+}
+
+.subscribe-back-border {
+    background-color: #f8f7f4;
+
+    color: #5a5a5a;
+    font-size: 16px;
+    line-height: 22px;
+    
+
+    height: 211px;
+    width: 549px
+}
+
+.main-footer {
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 18px;
+
+    background-color: #849d8f;
+}
+
+.main-footer ul {
+    list-style: none;
+}
+
+.main-footer a {
+    text-decoration: underline;
+}
+
+.for-suppliers a {
+    text-decoration: none;
+}
