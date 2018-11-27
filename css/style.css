@@ -64,6 +64,14 @@ a:active {
     list-style: none;
 }
 
+.popup {
+  display: none;
+}
+
+.modal {
+  display: none;
+}
+
 .site-navigation-list a,
 .user-main-navigation-list a {
     color: #ffffff;
@@ -91,6 +99,34 @@ a:active {
 
 .user-main-navigation-item .user-navigation-button {
   background-color: #8996a6;
+}
+
+.navigation-active-button a {
+  color: #ffffff;
+
+  background-color: #d07058;
+}
+
+.user-catalog-navigation-list li:nth-of-type(3) a {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.breadcrumbs {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 11px;
+}
+
+.catalog-base .page-title {
+  color: #ffffff;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.breadcrumbs li:last-child a {
+  text-decoration: none;
 }
 
 .advantage {
