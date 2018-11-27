@@ -164,7 +164,7 @@ a:active {
     background-position: 0 0;
     background-repeat: no-repeat;
 
-    height: 229px;
+    min-height: 229px;
     width: 560px;
 }
 
@@ -180,7 +180,7 @@ a:active {
     background-position: 0 0;
     background-repeat: no-repeat;
 
-    height: 229px;
+    min-height: 229px;
     width: 560px;
 }
 
@@ -192,7 +192,7 @@ a:active {
     line-height: 22px;
 
 
-    height: 211px;
+    min-height: 211px;
     width: 549px
 }
 
