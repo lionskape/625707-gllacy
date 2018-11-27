@@ -168,7 +168,11 @@ a:active {
     list-style: none;
 }
 
-
-.for-suppliers a {
-    text-decoration: none;
+.catalog-pagination-list {
+  list-style: none;
 }
+
+.catalog-pagination-list a {
+  text-decoration: none;
+}
+
