@@ -77,6 +77,10 @@ a:active {
     text-decoration: none;
 } */
 
+.main-catalog-popup-item a {
+  text-decoration: none;
+}
+
 .site-navigation-list a:hover,
 .site-navigation-list a:focus,
 .user-main-navigation-list a:hover,
