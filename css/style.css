@@ -208,3 +208,142 @@ a:active {
     text-decoration: none;
 }
 
+/*-------------Сетки-------------*/
+
+.main-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.site-navigation-list {
+    margin: 0;
+    padding: 0;
+}
+
+.user-main-navigation-list {
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-header {
+    margin: 9px 27px 0;
+    width: 1150px;
+    margin: 9px auto 0;
+}
+
+.main-header-logo {
+    margin-right: 27px;
+}
+
+.site-navigation-list {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    padding-bottom: 9px;
+    justify-content: space-between;
+}
+
+.site-navigation-item {
+    margin-right: 25px;
+}
+
+.user-main-navigation-list {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    padding-bottom: 9px;
+}
+
+.user-main-navigation-item {
+    margin-left: 10px;
+}
+
+.banners-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-banner {
+    width: 560px;
+}
+
+.base-container {
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.advantage-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 306px;;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.advantage-item {
+    min-height: 110px;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    width: 540px;
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.advantage-item img {
+    margin-right: 10px;
+}
+
+.advantage strong {
+    margin-top: 27px;
+    margin-bottom: 10px;
+    padding-left: 21px;
+}
+
+.main-footer {
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-social-media-list {
+    margin: 0;
+    padding: 0;
+    width: 190px;
+    margin-left: 26px;
+    margin-right: 210px;
+    display: flex;
+    flex-direction: row;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.footer-social-media-item {
+    margin-right: 16px;
+}
+
+.footer-contact-list {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-copyright {
+    margin-left: auto;
+}
+
+.footer-wrapper-container {
+    display: flex;
+    flex-direction: row;
+}
