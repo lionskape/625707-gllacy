@@ -52,8 +52,8 @@ a:active {
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
-    background-color: #849d8f;
 }
+
 
 .site-navigation-list,
 .user-main-navigation-list {
@@ -90,7 +90,7 @@ a:active {
 .user-main-navigation-list a:hover,
 .user-main-navigation-list a:focus {
     background-color: #ffffff;
-    color: black;
+    color: #333333;
 }
 
 .user-navigation-button {
@@ -101,6 +101,11 @@ a:active {
   background-color: #d07058;
 }
 
+.user-main-navigation-list {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
 .user-main-navigation-list a:hover {
     color: #000000;
 
@@ -123,7 +128,7 @@ a:active {
 }
 
 .advantage {
-    color: #000000;
+    color: #323232;
 
     background-color: rgb(238, 227, 201);
     background-image: url("../img/background/advantage-background.png");
@@ -161,6 +166,10 @@ a:active {
     width: 560px;
 }
 
+.blog-info-header {
+    font-weight: 500;
+}
+
 .blog-info a {
     text-decoration: underline;
     font-size: 24px;
@@ -189,11 +198,13 @@ a:active {
 }
 
 .main-footer {
-    color: #ffffff;
     font-size: 13px;
     line-height: 18px;
+    font-weight: 400;
+}
 
-    background-color: #849d8f;
+.for-suppliers {
+    font-weight: 700
 }
 
 .main-footer ul {
