@@ -246,7 +246,7 @@ a:active {
 .main-header {
     margin: 9px 27px 0;
     width: 1150px;
-    margin: 9px auto 0;
+    margin: 9px auto 28px;
 }
 
 .main-header-logo {
@@ -274,6 +274,18 @@ a:active {
 
 .user-main-navigation-item {
     margin-left: 10px;
+}
+
+.breadcrumbs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.breadcrumbs li {
+    margin-right: 10px;
 }
 
 .banners-wrapper {
