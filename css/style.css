@@ -171,6 +171,7 @@ a:active {
 }
 
 .blog-info a {
+    color: #000000;
     text-decoration: underline;
     font-size: 24px;
     line-height: 30px;
@@ -323,8 +324,7 @@ a:active {
 
 .main-footer {
     width: 1150px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 35px auto 30px;
 }
 
 .footer-social-media-list {
@@ -348,13 +348,74 @@ a:active {
 .footer-contact-list {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 335px;
+}
+.footer-contact-item {
+    margin-right: 26px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .footer-copyright {
     margin-left: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-wrapper-container {
     display: flex;
     flex-direction: row;
+}
+
+
+.catalog {
+    width: 1150px;
+    margin-top: 40px 27px 80px;
+}
+
+.catalog-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1150px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.catalog-item {
+    width: 270px;
+    margin-bottom: 40px;
+}
+
+.catalog-pagination {
+    width: 1150px;
+}
+
+.catalog-pagination-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.catalog-pagination-item {
+    margin-right: 25px;
+}
+
+.site-navigation-item {
+    margin-right: 25px;
+}
+
+.footer-copyright p {
+    margin-top: 0;
+}
+
+.footer-copyright a {
+    margin: 0;
 }
