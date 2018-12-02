@@ -179,7 +179,7 @@ a:active {
 
 .subscribe-sect {
     background-image: url("../img/background/banner-2.svg");
-    background-position: 0 0;
+    padding: 6px;
     background-repeat: no-repeat;
 
     min-height: 229px;
@@ -224,7 +224,6 @@ a:active {
 
 .main-navigation {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -255,10 +254,8 @@ a:active {
 
 .site-navigation-list {
     display: flex;
-    flex-direction: row;
     align-self: center;
     padding-bottom: 9px;
-    justify-content: space-between;
 }
 
 .site-navigation-item {
@@ -288,14 +285,26 @@ a:active {
     margin-right: 10px;
 }
 
+.blog-info {
+    padding-top: 26px;
+    padding-left: 20px;
+    margin-right: 25px;
+}
+
+
 .banners-wrapper {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
 .main-banner {
     width: 560px;
+    min-height: 211px;
+}
+
+.subscribe-back-border p {
+    margin: 0;
+    padding: 0
 }
 
 .base-container {
@@ -304,34 +313,30 @@ a:active {
     margin-right: auto;
 }
 
+.advantage {
+    padding-left: 20px;
+    margin: 0 0 40px;
+}
+
+.adavantage-header {
+    margin: 0 0 10px 0;
+}
+
 .advantage-list {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    height: 306px;;
     flex-wrap: wrap;
-    margin-bottom: 40px;
 }
 
 .advantage-item {
-    min-height: 110px;
-    page-break-inside: avoid;
-    break-inside: avoid;
     width: 540px;
     display: flex;
-    margin-left: 20px;
     margin-bottom: 25px;
 }
 
 .advantage-item img {
     margin-right: 10px;
-}
-
-.advantage strong {
-    margin-top: 27px;
-    margin-bottom: 10px;
-    padding-left: 21px;
 }
 
 .main-footer {
@@ -342,11 +347,10 @@ a:active {
 .footer-social-media-list {
     margin: 0;
     padding: 0;
-    width: 190px;
+    width: 380px;
     margin-left: 26px;
-    margin-right: 210px;
+    margin-right: 20px;
     display: flex;
-    flex-direction: row;
 }
 
 .visually-hidden {
@@ -373,8 +377,6 @@ a:active {
 
 .footer-copyright {
     margin-left: auto;
-    display: flex;
-    flex-direction: column;
 }
 
 .footer-wrapper-container {
@@ -385,16 +387,12 @@ a:active {
 
 .catalog {
     width: 1150px;
-    margin-top: 40px 27px 80px;
 }
 
 .catalog-list {
     padding: 0;
     margin: 0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 1150px;
     flex-wrap: wrap;
     list-style: none;
 }
@@ -402,6 +400,7 @@ a:active {
 .catalog-item {
     width: 270px;
     margin-bottom: 40px;
+    margin-right: 15px;
 }
 
 .catalog-pagination {
