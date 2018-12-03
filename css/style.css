@@ -11,6 +11,14 @@ body {
     background-color: #849d8f;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
 a {
     color: #ffffff;
 }
@@ -161,9 +169,6 @@ a:active {
     background-image: url("../img/background/banner-1.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
-
-    min-height: 229px;
-    width: 560px;
 }
 
 .blog-info-header {
@@ -171,6 +176,7 @@ a:active {
 }
 
 .blog-info a {
+    color: #000000;
     text-decoration: underline;
     font-size: 24px;
     line-height: 30px;
@@ -178,11 +184,8 @@ a:active {
 
 .subscribe-sect {
     background-image: url("../img/background/banner-2.svg");
-    background-position: 0 0;
+    padding: 6px;
     background-repeat: no-repeat;
-
-    min-height: 229px;
-    width: 560px;
 }
 
 .subscribe-back-border {
@@ -194,7 +197,6 @@ a:active {
 
 
     min-height: 211px;
-    width: 549px
 }
 
 .main-footer {
@@ -219,3 +221,213 @@ a:active {
     text-decoration: none;
 }
 
+/*-------------Сетки-------------*/
+
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-navigation-list {
+    margin: 0;
+    padding: 0;
+}
+
+.user-main-navigation-list {
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-header {
+    margin: 9px 27px 0;
+    width: 1150px;
+    margin: 9px auto 28px;
+}
+
+.main-header-logo {
+    margin-right: 27px;
+}
+
+.site-navigation-list {
+    display: flex;
+    align-self: center;
+    padding-bottom: 9px;
+}
+
+.site-navigation-item {
+    margin-right: 25px;
+}
+
+.user-main-navigation-list {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    padding-bottom: 9px;
+}
+
+.user-main-navigation-item {
+    margin-left: 10px;
+}
+
+.breadcrumbs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.breadcrumbs li {
+    margin-right: 10px;
+}
+
+.blog-info {
+    padding-top: 26px;
+    padding-left: 20px;
+    margin-right: 25px;
+}
+
+
+.banners-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-banner {
+    width: 560px;
+    min-height: 211px;
+}
+
+.subscribe-back-border p {
+    margin: 0;
+    padding: 0
+}
+
+.base-container {
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.advantage {
+    padding-left: 20px;
+    margin: 0 0 40px;
+}
+
+.adavantage-header {
+    margin: 0 0 10px 0;
+}
+
+.advantage-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.advantage-item {
+    width: 540px;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.advantage-item img {
+    margin-right: 10px;
+}
+
+.main-footer {
+    width: 1150px;
+    margin: 35px auto 30px;
+}
+
+.footer-social-media-list {
+    margin: 0;
+    padding: 0;
+    width: 380px;
+    margin-left: 26px;
+    margin-right: 20px;
+    display: flex;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.footer-social-media-item {
+    margin-right: 16px;
+}
+
+.footer-contact-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 335px;
+}
+.footer-contact-item {
+    margin-right: 26px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer-copyright {
+    margin-left: auto;
+}
+
+.footer-wrapper-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.catalog {
+    width: 1150px;
+}
+
+.catalog-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.catalog-item {
+    width: 270px;
+    margin-bottom: 40px;
+    margin-right: 15px;
+}
+
+.catalog-pagination {
+    width: 1150px;
+}
+
+.catalog-pagination-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.catalog-pagination-item {
+    margin-right: 25px;
+}
+
+.site-navigation-item {
+    margin-right: 25px;
+}
+
+.footer-copyright p {
+    margin-top: 0;
+}
+
+.footer-copyright a {
+    margin: 0;
+}

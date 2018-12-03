@@ -10,35 +10,37 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="img/header-img/logo.svg" width="154" height="64" alt="Логотип магазина 'Gllacy Shop'">
-      </a>
-      <ul class="site-navigation-list">
-        <li class="site-navigation-item user-navigation-popup">
-          <a href="#">Каталог</a>
-          <section class="popup main-catalog-popup">
-            <ul class="main-catalog-popup-list">
-              <li class="main-catalog-popup-item">
-                <a href="#" class="catalog-popup-link catalog-popup-link-header">Новинки</a>
-              </li>
-              <li class="main-catalog-popup-item">
-                <a href="#" class="catalog-popup-link">Cливочное</a>
-              </li>
-              <li class="main-catalog-popup-item">
-                <a href="#" class="catalog-popup-link">Щеребты</a>
-              </li>
-              <li class="main-catalog-popup-item">
-                <a href="#" class="catalog-popup-link">Фруктовый лед</a>
-              </li>
-              <li class="main-catalog-popup-item">
-                <a href="#" class="catalog-popup-link">Мелорин</a>
-              </li>
-            </ul>
-          </section>
-        </li>
-        <li class="site-navigation-item"><a href="#">Доставка и оплата</a></li>
-        <li class="site-navigation-item"><a href="#">О Компании</a></li>
-      </ul>
+      <div class="main-nav-wrapper">
+        <a class="main-header-logo">
+          <img src="img/header-img/logo.svg" width="154" height="64" alt="Логотип магазина 'Gllacy Shop'">
+        </a>
+        <ul class="site-navigation-list">
+          <li class="site-navigation-item user-navigation-popup">
+            <a href="#">Каталог</a>
+            <!-- <section class="popup main-catalog-popup">
+              <ul class="main-catalog-popup-list">
+                <li class="main-catalog-popup-item">
+                  <a href="#" class="catalog-popup-link catalog-popup-link-header">Новинки</a>
+                </li>
+                <li class="main-catalog-popup-item">
+                  <a href="#" class="catalog-popup-link">Cливочное</a>
+                </li>
+                <li class="main-catalog-popup-item">
+                  <a href="#" class="catalog-popup-link">Щеребты</a>
+                </li>
+                <li class="main-catalog-popup-item">
+                  <a href="#" class="catalog-popup-link">Фруктовый лед</a>
+                </li>
+                <li class="main-catalog-popup-item">
+                  <a href="#" class="catalog-popup-link">Мелорин</a>
+                </li>
+              </ul>
+            </section> -->
+          </li>
+          <li class="site-navigation-item"><a href="#">Доставка и оплата</a></li>
+          <li class="site-navigation-item"><a href="#">О Компании</a></li>
+        </ul>
+      </div>
 
       <ul class="user-main-navigation-list">
         <li class="user-main-navigation-item user-navigation-popup">
@@ -93,14 +95,14 @@
     <h1 class="visually-hidden">Магазин Глейси</h1>
 
     <article class="banner">
-      <h2 class="main-banner">Малинка даром !</h2>
+      <h2 class="main-banner-prod">Малинка даром !</h2>
       <p class="banner-text-content">
         При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
       </p>
       <a href="#" class="btn send-btn banner-btn-jam">Хочу варенье!</a>
     </article>
     <article class="banner">
-      <h2 class="main-banner">Шоколадки даром !</h2>
+      <h2 class="main-banner-prod">Шоколадки даром !</h2>
       <p class="banner-text-content">
         При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
       </p>
@@ -174,7 +176,7 @@
 
     <section class="advantage">
       <h2 class="visually-hidden">Преимущества</h2>
-      <p>
+      <p class="adavantage-header">
         <strong>
           Магазин Глэйси - это онлайн - и офлайн-магазин по продаже мороженого собственного производства.
         </strong>
@@ -206,76 +208,80 @@
         </li>
       </ul>
     </section>
-
-    <article class="blog-info">
-      <h3 class="blog-info-header">
-        Новое в нашем блоге
-      </h3>
-      <p>
-        <a href="#">
-          10 способов сервировки фруктовых щербетов к столу
-        </a>
-      </p>
-    </article>
-    <section class="subscribe-sect">
-      <div class="subscribe-back-border">
+    <div class="banners-wrapper">
+      <article class="blog-info main-banner">
+        <h3 class="blog-info-header">
+          Новое в нашем блоге
+        </h3>
         <p>
-          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+          <a href="#">
+            10 способов сервировки фруктовых щербетов к столу
+          </a>
         </p>
-        <form class="subscribe-form" action="#" method="post">
-          <input type="email" required name="subscribe-form" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-          <button type="submit" class="btn send-btn subscribe-send-btn">Отправить</button>
-        </form>
-      </div>
-    </section>
+      </article>
+      <section class="subscribe-sect main-banner">
+        <div class="subscribe-back-border">
+          <p>
+            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+          </p>
+          <form class="subscribe-form" action="#" method="post">
+            <input type="email" required name="subscribe-form" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            <button type="submit" class="btn send-btn subscribe-send-btn">Отправить</button>
+          </form>
+        </div>
+      </section>
+    </div>
     <section class="main-map">
       <img  src="img/map/pin.svg" class="ice-cream-pin" width="140" height="80">
     </section>
   </main>
 
   <footer class="main-footer">
-    <ul class="footer-social-media-list">
-      <li class="footer-social-media-item">
-        <a class="social-button twitter-index-button" href="#">
-          <img src="img/social-img/twitter.svg" width="32" height="32" alt="Twitter">
-          <span class="visually-hidden">Twitter</span>
-        </a>
-      </li>
-      <li class="footer-social-media-item">
-        <a class="social-button instagram-index-button" href="#">
-          <img src="img/social-img/instagram.svg" width="32" height="32" alt="Instagram">
-          <span class="visually-hidden">Instagram</span>
-        </a>
-      </li>
-      <li class="footer-social-media-item">
-        <a class="social-button facebook-index-button" href="#">
-          <img src="img/social-img/facebook.svg" width="32" height="32" alt="Facebook">
-          <span class="visually-hidden">Facebook</span>
-        </a>
-      </li>
-      <li class="footer-social-media-item">
-        <a class="social-button vk-index-button" href="#">
-          <img src="img/social-img/vkontakte.svg" width="32" height="32" alt="Вконтакте">
-          <span class="visually-hidden">Вконтакте</span>
-        </a>
-      </li>
-    </ul>
+    <div class="footer-wrapper-container">
+      <ul class="footer-social-media-list">
+        <li class="footer-social-media-item">
+          <a class="social-button twitter-index-button" href="#">
+            <img src="img/social-img/twitter.svg" width="32" height="32" alt="Twitter">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="footer-social-media-item">
+          <a class="social-button instagram-index-button" href="#">
+            <img src="img/social-img/instagram.svg" width="32" height="32" alt="Instagram">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+        <li class="footer-social-media-item">
+          <a class="social-button facebook-index-button" href="#">
+            <img src="img/social-img/facebook.svg" width="32" height="32" alt="Facebook">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="footer-social-media-item">
+          <a class="social-button vk-index-button" href="#">
+            <img src="img/social-img/vkontakte.svg" width="32" height="32" alt="Вконтакте">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+      </ul>
 
-    <ul class="footer-contact-list">
-      <li class="footer-contact-item for-suppliers">
-        <img src="img/footer-hurt.svg" width="15" height="13" alt="Сердечко">
-        <a href="#">Для поставщиков</a>
-      </li>
-      <li class="footer-contact-item"><a href="#">Наши документы</a></li>
-      <li class="footer-contact-item"><a href="#">О производстве</a></li>
-      <li class="footer-contact-item"><a href="#">Экологические стандарты</a></li>
-    </ul>
-    <p class="footer-copyright">
-      <a class="footer-copyright-logo" href="https://htmlacademy.ru">
-          <img src="img/logo-htmlacademy-small.svg" width="130" height="39" alt="HTML Academy">
-      </a>
-      <p>Cделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
-    </p>
+      <ul class="footer-contact-list">
+        <li class="footer-contact-item for-suppliers">
+          <img src="img/footer-hurt.svg" width="15" height="13" alt="Сердечко">
+          <a href="#">Для поставщиков</a>
+        </li>
+        <li class="footer-contact-item"><a href="#">Наши документы</a></li>
+        <li class="footer-contact-item"><a href="#">О производстве</a></li>
+        <li class="footer-contact-item"><a href="#">Экологические стандарты</a></li>
+      </ul>
+      <div class="footer-copyright">
+        <div class="foot-copyright-wraper">
+          <a class="footer-copyright-logo" href="https://htmlacademy.ru">
+              <img src="img/logo-htmlacademy-small.svg" width="130" height="39" alt="HTML Academy">
+          </a>
+        <p>Cделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
+        </div>
+    </div>
   </footer>
 
   <section class="modal appointment-modal">
