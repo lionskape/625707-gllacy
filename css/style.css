@@ -11,6 +11,14 @@ body {
     background-color: #849d8f;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
 a {
     color: #ffffff;
 }
@@ -161,9 +169,6 @@ a:active {
     background-image: url("../img/background/banner-1.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
-
-    min-height: 229px;
-    width: 560px;
 }
 
 .blog-info-header {
@@ -181,9 +186,6 @@ a:active {
     background-image: url("../img/background/banner-2.svg");
     padding: 6px;
     background-repeat: no-repeat;
-
-    min-height: 229px;
-    width: 560px;
 }
 
 .subscribe-back-border {
@@ -195,7 +197,6 @@ a:active {
 
 
     min-height: 211px;
-    width: 549px
 }
 
 .main-footer {
