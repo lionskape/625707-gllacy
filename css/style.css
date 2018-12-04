@@ -372,9 +372,15 @@ a:active {
     align-items: stretch;
 }
 
-.hurt-for-suppliers {
-    padding-right: 7px;
+.for-suppliers {
+  position: relative;
 }
+
+.hurt-for-suppliers {
+  position: absolute;
+  left: -20px;
+}
+
 .footer-contact-item {
     margin-right: 26px;
     margin-top: 0;
