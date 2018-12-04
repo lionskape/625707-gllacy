@@ -259,8 +259,9 @@ a:active {
     padding-bottom: 9px;
 }
 
-.site-navigation-item {
-    margin-right: 25px;
+.site-navigation-item a{
+    padding: 0 13px 0 14px;
+    display: block;
 }
 
 .user-main-navigation-list {
@@ -354,8 +355,22 @@ a:active {
     display: flex;
 }
 
-.visually-hidden {
-    display: none;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .footer-social-media-item {
@@ -432,9 +447,9 @@ a:active {
     margin-right: 25px;
 }
 
-.site-navigation-item {
+/* .site-navigation-item {
     margin-right: 25px;
-}
+} */
 
 .footer-copyright p {
     margin-top: 0;
