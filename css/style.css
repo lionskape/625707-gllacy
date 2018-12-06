@@ -717,3 +717,52 @@ a:active {
 .footer-copyright a {
     margin: 0;
 }
+
+.user-navigation-popup {
+    position: relative;
+}
+
+.main-catalog-popup-list {
+    font-size: 14px;
+    line-height: 16px;
+
+    position: absolute;
+    top: 45px;
+    left: -6px;
+    z-index: 1;
+    display: none;
+    min-width: 143px;
+    margin: 0;
+    padding: 0;
+    border-radius: 7px;
+    background-color: #f8f7f4;
+    list-style: none;
+    display: block;
+}
+
+.main-catalog-popup-item a {
+    display: block;
+    margin: 0;
+    padding: 10px 0 12px 19px;
+    font-weight: 700;
+    color: black;
+}
+
+.catalog-popup-link-header {
+    border-bottom: 1px solid #000000;
+}
+
+.catalog-popup-link-header p {
+    margin: 0;
+    border-bottom: 1px solid #d1d0ce;
+    padding: 10px 0 12px 19px;
+    font-weight: 700;
+    color: black;
+}
+
+.main-catalog-popup-item a:hover,
+.main-catalog-popup-item a:focus {
+    background-color: rgb(238, 219, 213);
+    border-radius: 5px;
+}
+
