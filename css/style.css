@@ -179,8 +179,11 @@ a:active {
 
     background-color: rgb(255, 255, 255);
     background-image: url("../img/background/banner-1.jpg");
-    background-position: 0 0;
+    background-position: 17% 39%;
     background-repeat: no-repeat;
+
+    border-radius: 15px;
+    padding-bottom: 22px;
 }
 
 .blog-info-header {
@@ -387,6 +390,14 @@ a:active {
     padding-left: 18px;
 }
 
+.send-btn {
+  display: inline-block;
+  color: #fff;
+  vertical-align: top;
+  text-shadow: 0 2px 5px rgba(160,32,11,.76);
+  border-radius: 30px;
+}
+
 .banner-btn-jam, .banner-btn-choco {
     align-self: flex-end;
     margin-right: 22px;
@@ -394,14 +405,6 @@ a:active {
     padding: 12px 23px;
     border-radius: 30px;
 }
-
-.send-btn {
-    display: inline-block;
-    color: #fff;
-    vertical-align: top;
-    text-shadow: 0 2px 5px rgba(160,32,11,.76);
-}
-
 
 .choco-banner {
   background-color: #785748;
@@ -436,6 +439,10 @@ a:active {
     margin-right: 25px;
 }
 
+.blog-info p {
+  width: 51%;
+}
+
 
 .banners-wrapper {
     display: flex;
@@ -450,6 +457,34 @@ a:active {
 .subscribe-back-border p {
     margin: 0;
     padding: 0
+}
+
+.subscribe-back-border p {
+    color: #5a5a5a;
+    font-weight: 500;
+    padding: 30px 19px;
+}
+
+.subscribe-form {
+  margin: 0 0 0 21px;
+  padding: 7px 0 0 0;
+}
+
+.subscribe-form input[type=email] {
+    color: #323232;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    padding: 10px 13px;
+    width: 339px;
+}
+
+.subscribe-send-btn {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 9px 18px;
+    margin-left: 7px;
+    margin-top: -1px;
 }
 
 .base-container {
