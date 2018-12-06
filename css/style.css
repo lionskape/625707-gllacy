@@ -530,6 +530,9 @@ a:active {
 
     background-repeat: no-repeat;
     background-position: 0 0;
+
+    disolay: block;
+    position: absolute;
 }
 
 .advantage-item:nth-child(1)::before {
@@ -598,16 +601,22 @@ a:active {
     align-items: stretch;
 }
 
+.for-suppliers {
+  position: relative;
+}
+
 .for-suppliers::before {
   content: "";
   position: absolute;
-  left: -22px;
-  top: 10px;
+  left: -19px;
+  top: 3px;
   width: 15px;
   height: 15px;
   background-image: url(../img/footer-hurt.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  display: block;
+  position: absolute;
 }
 .footer-contact-item {
     margin-right: 26px;
