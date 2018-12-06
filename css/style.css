@@ -533,19 +533,19 @@ a:active {
 }
 
 .advantage-item:nth-child(1)::before {
-  background-image: url("../img/advantage-block/ice-cream-advantage.svg");
+  background-image: url(../img/advantage-block/ice-cream-advantage.svg);
 }
 
 .advantage-item:nth-child(2)::before {
-  background-image: url("../img/advantage-block/cow-advantage.svg");
+  background-image: url(../img/advantage-block/cow-advantage.svg);
 }
 
 .advantage-item:nth-child(3)::before {
-  background-image: url("../img/advantage-block/leaf-advantage.svg");
+  background-image: url(../img/advantage-block/leaf-advantage.svg);
 }
 
 .advantage-item:nth-child(4)::before {
-  background-image: url("../img/advantage-block/thermometer-advantage.svg");
+  background-image: url(../img/advantage-block/thermometer-advantage.svg);
 }
 
 .advantage-item p {
@@ -567,6 +567,19 @@ a:active {
     display: flex;
 }
 
+.social-button {
+    display: block;
+    height: 38px;
+    width: 38px;
+    border: 3px solid rgba(255,255,255,.5);
+    border-radius: 50%;
+}
+
+.social-button:hover,
+.social-button:focus {
+    border: 3px solid rgba(255,255,255,.7)
+}
+
 .visually-hidden {
     display: none;
 }
@@ -585,8 +598,16 @@ a:active {
     align-items: stretch;
 }
 
-.hurt-for-suppliers {
-    padding-right: 7px;
+.for-suppliers::before {
+  content: "";
+  position: absolute;
+  left: -22px;
+  top: 10px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/footer-hurt.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 .footer-contact-item {
     margin-right: 26px;
@@ -597,6 +618,10 @@ a:active {
 
 .footer-copyright {
     margin-left: auto;
+}
+
+.footer-copyright-logo img {
+  margin-left: -10px;
 }
 
 .footer-wrapper-container {
@@ -624,7 +649,36 @@ a:active {
 }
 
 .catalog-item img {
-  border-radius: 50%;
+    border-radius: 50%;
+}
+
+.catalog-item {
+    position: relative;
+    width: 267px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.catalog-item-title {
+    margin: 0;
+    min-height: 45px;
+    padding-left: 6px;
+    padding-right: 7px;
+    text-align: center;
+    z-index: 9;
+}
+
+.catalog-item-price {
+    font-size: 45px;
+    font-weight: 700;
+    text-shadow: 0 1px 3px rgba(49,50,53,.5);
+
+    position: absolute;
+    margin: 0;
+    z-index: 9;
+    bottom: 80px;
+    left: -17px;
 }
 
 .catalog-pagination {
