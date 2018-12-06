@@ -725,27 +725,31 @@ a:active {
 .main-catalog-popup-list {
     font-size: 14px;
     line-height: 16px;
+    list-style: none;
 
-    position: absolute;
-    top: 45px;
-    left: -6px;
-    z-index: 1;
-    display: none;
-    min-width: 143px;
     margin: 0;
     padding: 0;
+    min-width: 143px;
+
+    position: absolute;
+    top: 40px;
+    left: -15px;
+    z-index: 1;
+    display: block;
+    
     border-radius: 7px;
     background-color: #f8f7f4;
-    list-style: none;
-    display: block;
+    
 }
 
 .main-catalog-popup-item a {
-    display: block;
-    margin: 0;
-    padding: 10px 0 12px 19px;
     font-weight: 700;
     color: black;
+
+    margin: 0;
+    padding: 10px 0 12px 19px;
+
+    display: block;
 }
 
 .catalog-popup-link-header {
@@ -753,11 +757,13 @@ a:active {
 }
 
 .catalog-popup-link-header p {
-    margin: 0;
-    border-bottom: 1px solid #d1d0ce;
-    padding: 10px 0 12px 19px;
     font-weight: 700;
     color: black;
+
+    padding: 10px 0 12px 19px;
+    margin: 0;
+    
+    border-bottom: 1px solid #d1d0ce;
 }
 
 .main-catalog-popup-item a:hover,
