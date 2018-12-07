@@ -583,8 +583,22 @@ a:active {
     border: 3px solid rgba(255,255,255,.7)
 }
 
-.visually-hidden {
-    display: none;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .footer-social-media-item {
@@ -766,3 +780,83 @@ a:active {
     border-radius: 5px;
 }
 
+.user-navigation-popup {
+    position: relative;
+}
+
+.search-popup {
+    position: absolute;
+    display: block;
+    top: 37px;
+    right: -3px;
+
+    padding: 20px 15px;
+
+    border-radius: 6px;
+    background-color: #f7f8f4;
+}
+
+.search-popup input {
+    color: #323232;
+
+    width: 310px;
+    padding: 8px;
+
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+
+    background-color: #ffffff;
+}
+
+
+.popup-login {
+    color: #323232;
+
+    position: absolute;
+    display: block;
+    right: -3px;
+    top: 34px;
+
+    z-index: 2;
+    padding: 19px;
+
+    border-radius: 6px;
+
+    background-color: #f7f8f4;
+}
+
+.popup-login input {
+  width: 230px;
+  padding: 8px;
+  border: 1px solid #d3d3d3;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.popup-login a {
+    color: #323232;
+    font-size: 13px;
+    line-height: 24px;
+    text-decoration: underline;
+
+    display: block;
+}
+
+.login-send-btn {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+
+  padding: 10px 23px;
+  border-radius: 20px;
+}
+
+.login-password-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.password-links {
+  margin: 0;
+}

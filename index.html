@@ -35,7 +35,7 @@
                 <a href="#" class="catalog-popup-link">Мелорин</a>
               </li>
             </ul>
-  
+
           </li>
           <li class="site-navigation-item"><a href="#">Доставка и оплата</a></li>
           <li class="site-navigation-item"><a href="#">О Компании</a></li>
@@ -51,10 +51,7 @@
           </a>
           <section class="popup search-popup">
             <form class="search-form" action="#" method="post">
-              <label>
-                  <input class="search-popup-field"  type="search" name="search" pattern=".{1,}" placeholder="Что ищем?" required>
-                  Что ищем?
-              </label>
+              <input class="search-popup-field"  type="search" name="search" pattern=".{1,}" placeholder="Что ищем?" required>
             </form>
           </section>
         </li>
@@ -65,21 +62,17 @@
           <section class="popup popup-login">
             <h2 class="visually-hidden">Вход в личный кабинет</h2>
             <form class="login-form" action="#" method="post">
-              <label>
-                <input class="popup-email-user" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" placeholder="Электронная почта" required>
-                Электронная почта
-              </label>
-              <label>
-                <input class="popup-password" type="password" name="password" pattern=".{6,}" placeholder="Пароль" required>
-                Пароль
-              </label>
-              <p class="login-password-info">
+              <label for="popup-user-email" class="visually-hidden">  Электронная почта </label>
+              <input id="popup-user-email" class="popup-email-user" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" placeholder="Электронная почта" required>
+              <label for="password-popup" class="visually-hidden">Пароль</label>
+              <input class="popup-password" id="password-popup" type="password" name="password" pattern=".{6,}" placeholder="Пароль" required>
+              <div class="login-password-info">
                 <button class="btn send-btn login-send-btn" type="submit">Войти</button>
                 <p class="password-links">
                   <a href="#" class="forget-password-link">Забыли пароль?</a>
                   <a href="#" class="new-user-link">Новая регистрация</a>
                 </p>
-              </p>
+              </div>
             </form>
           </section>
         </li>
