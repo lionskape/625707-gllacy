@@ -338,7 +338,7 @@ a:active {
 
 .basket-button {
     position: relative;
-    padding-right: 33px;
+    padding-right: 18px;
 }
 .basket-button::before {
     background-image: url(../img/header-img/basket.svg);
@@ -347,7 +347,7 @@ a:active {
     content: "";
     position: absolute;
     top: 6px;
-    left: 15px;
+    left: 10px;
     width: 21px;
     height: 21px;
 }
@@ -733,10 +733,6 @@ input[type="radio"].visually-hidden {
     margin: 0;
 }
 
-.user-navigation-popup {
-    position: relative;
-}
-
 .main-catalog-popup-list {
     font-size: 14px;
     line-height: 16px;
@@ -783,6 +779,7 @@ input[type="radio"].visually-hidden {
 
 .user-navigation-popup {
     position: relative;
+    margin-left: 15px;
 }
 
 .search-popup {
@@ -1000,4 +997,14 @@ td > img {
 .pushed-basket-button {
   color: #000000;
   background-color: #f8f7f4;
+}
+
+.user-main-navigation-item {
+  margin-left: 15px;
+}
+
+.search-button img {
+  position: relative;
+  top: 4px;
+
 }
