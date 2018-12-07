@@ -990,3 +990,14 @@ td > img {
 
     margin-right: 20px;
 }
+
+.pushed-basket-button::before {
+    background-image: url(../img/header-img/catalog-basket.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.pushed-basket-button {
+  color: #000000;
+  background-color: #f8f7f4;
+}
