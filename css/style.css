@@ -70,6 +70,7 @@ a:active {
 
 .main-catalog-popup-list {
     list-style: none;
+    box-shadow: 0px 2px 3px;
 }
 
 .popup {
@@ -81,14 +82,6 @@ a:active {
 }
 
 
-/* .site-navigation-item a {
-    text-decoration: underline;
-}
-
-.catalog-popup-link {
-    text-decoration: none;
-} */
-
 .main-catalog-popup-item a {
   text-decoration: none;
 }
@@ -96,10 +89,17 @@ a:active {
 .site-navigation-item {
     padding-top: 16px;
     padding-bottom: 12px;
+    text-decoration: none;
+}
+
+.site-navigation-item span {
+    border-bottom: 1px solid rgba(255,255,255,.4);
 }
 
 .site-navigation-item a {
     padding: 7px 14px;
+    text-decoration: none;
+    /* border-bottom: 1px solid rgba(255,255,255,.4); */
 }
 
 .site-navigation-item a:hover,
@@ -121,6 +121,10 @@ a:active {
   text-decoration: none;
 }
 
+.navigation-active-button span {
+    border: 0;
+}
+
 .user-main-navigation-list {
     font-size: 14px;
     font-weight: 500;
@@ -138,9 +142,16 @@ a:active {
     line-height: 41px;
 }
 
-.breadcrumbs a:not([href]) {
+.breadcrumbs a {
+    border-bottom: 1px solid rgba(255, 255, 255,0.4);
     text-decoration: none;
 }
+
+.breadcrumbs a:not([href]) {
+    text-decoration: none;
+    border-bottom: 0;
+}
+
 
 .advantage {
     color: #323232;
@@ -759,7 +770,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-popup-link-header {
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid rgb(209, 208, 206, .4);
 }
 
 .catalog-popup-link-header p {
@@ -862,7 +873,7 @@ input[type="radio"].visually-hidden {
 
 .appointment-modal {
     color: #000000;
-    z-index: ;
+    z-index: 20;
 
     display: block;
     position: fixed;
