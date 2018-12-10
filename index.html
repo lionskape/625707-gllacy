@@ -35,7 +35,7 @@
                 <a href="#" class="catalog-popup-link">Мелорин</a>
               </li>
             </ul>
-  
+
           </li>
           <li class="site-navigation-item"><a href="#">Доставка и оплата</a></li>
           <li class="site-navigation-item"><a href="#">О Компании</a></li>
@@ -51,10 +51,7 @@
           </a>
           <section class="popup search-popup">
             <form class="search-form" action="#" method="post">
-              <label>
-                  <input class="search-popup-field"  type="search" name="search" pattern=".{1,}" placeholder="Что ищем?" required>
-                  Что ищем?
-              </label>
+              <input class="search-popup-field"  type="search" name="search" pattern=".{1,}" placeholder="Что ищем?" required>
             </form>
           </section>
         </li>
@@ -65,21 +62,17 @@
           <section class="popup popup-login">
             <h2 class="visually-hidden">Вход в личный кабинет</h2>
             <form class="login-form" action="#" method="post">
-              <label>
-                <input class="popup-email-user" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" placeholder="Электронная почта" required>
-                Электронная почта
-              </label>
-              <label>
-                <input class="popup-password" type="password" name="password" pattern=".{6,}" placeholder="Пароль" required>
-                Пароль
-              </label>
-              <p class="login-password-info">
+              <label for="popup-user-email" class="visually-hidden">  Электронная почта </label>
+              <input id="popup-user-email" class="popup-email-user" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" placeholder="Электронная почта" required>
+              <label for="password-popup" class="visually-hidden">Пароль</label>
+              <input class="popup-password" id="password-popup" type="password" name="password" pattern=".{6,}" placeholder="Пароль" required>
+              <div class="login-password-info">
                 <button class="btn send-btn login-send-btn" type="submit">Войти</button>
                 <p class="password-links">
                   <a href="#" class="forget-password-link">Забыли пароль?</a>
                   <a href="#" class="new-user-link">Новая регистрация</a>
                 </p>
-              </p>
+              </div>
             </form>
           </section>
         </li>
@@ -283,24 +276,20 @@
 
   <section class="modal appointment-modal">
     <h1>Мы обязательно вам ответим!</h1>
-    <button aria-label="Закрыть окно для связи">
-      <img src="img/big-close.svg" width="18" height="17" alt="Закрать модальное окно для свзяи">
-    </button>
     <form class="appointment-form" action="#" method="post">
-      <label class="appointment-item">
-        <input type="text" name="user-name" id="user-name-modal-field" placeholder="Как вас зовут?">
-        Как вас зовут?
-      </label>
-      <label class="appointment-item">
-        <input type="email" name="user-email" id="user-email-modal-field" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ваша почта для ответа?" required>
-        Ваша почта для ответа?
-      </label>
-      <label class="appointment-item">
-        <textarea rows="10" cols="30" id="user-text-modal-field" name="user-text" placeholder="Напишите что-нибудь..."></textarea>
-        Напишите что-нибудь...
-      </label>
+      <label for="user-name-modal-field" class="appointment-item visually-hidden">Как вас зовут?</label>
+      <input type="text" name="user-name" id="user-name-modal-field" placeholder="Как вас зовут?">
+
+      <label for="user-email-modal-field" class="appointment-item visually-hidden"> Ваша почта для ответа?</label>
+      <input type="email" name="user-email" id="user-email-modal-field" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ваша почта для ответа?" required>
+
+      <label for="user-text-modal-field" class="appointment-item visually-hidden">Напишите что-нибудь... </label>
+      <textarea rows="10" cols="30" id="user-text-modal-field" name="user-text" placeholder="Напишите что-нибудь..."></textarea>
       <button class="btn send-btn appointment-send-btn"  type="submit">Отправить</button>
     </form>
+    <button aria-label="Закрыть окно для связи" class="appointment-close">
+        <img src="img/big-close.svg" width="18" height="17" alt="Закрать модальное окно для свзяи">
+    </button>
   </section>
 
 </body>
