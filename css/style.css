@@ -287,6 +287,7 @@ a:active {
     display: flex;
     align-self: center;
     padding-bottom: 9px;
+    margin-left: -31px;
 }
 
 
@@ -296,6 +297,7 @@ a:active {
     align-self: center;
     padding-bottom: 9px;
     align-items: center;
+    margin-right: 7px;
 }
 
 
@@ -315,7 +317,7 @@ a:active {
 
 .search-button svg {
     position: relative;
-    top: 2px;
+    top: 4px;
 }
 
 .search-button {
@@ -341,7 +343,7 @@ a:active {
     background-position: 0 0;
     content: "";
     position: absolute;
-    top: 6px;
+    top: 8px;
     left: 15px;
     width: 21px;
     height: 21px;
@@ -357,8 +359,8 @@ a:active {
     background-position: 0 0;
     content: "";
     position: absolute;
-    top: 6px;
-    left: 10px;
+    top: 8px;
+    left: 12px;
     width: 21px;
     height: 21px;
 }
@@ -381,6 +383,7 @@ a:active {
     width: 560px;
     min-height: 200px;
     border-radius: 14px;
+    padding-bottom: 25px;
 }
 
 .rasp-banner {
@@ -389,8 +392,11 @@ a:active {
 }
 
 .rasp-banner .main-banner-prod {
+    font-size: 35px;
+    line-height: 41px;
+
     margin: 0;
-    padding-top: 15px;
+    padding-top: 16px;
     padding-right:25px;
     padding-left: 18px;
 }
@@ -412,8 +418,8 @@ a:active {
 
 .banner-btn-jam, .banner-btn-choco {
     align-self: flex-end;
-    margin-right: 22px;
-    margin-top: 45px;
+    margin-right: 24px;
+    margin-top: 43px;
     padding: 12px 23px;
     border-radius: 30px;
 }
@@ -421,11 +427,17 @@ a:active {
 .choco-banner {
   background-color: #785748;
   background-image: url("../img/background/mainbanner-choko.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .choco-banner .main-banner-prod {
-  padding: 15px 25px 0 18px;
-  margin: 0;
+    font-size: 35px;
+    line-height: 41px;
+
+    padding: 15px 25px 0 18px;
+    margin: 0;
 }
 
 .choco-banner .banner-text-content {
@@ -1014,7 +1026,7 @@ td > img {
 }
 
 .user-main-navigation-item {
-  margin-left: 15px;
+  margin-left: 13px;
 }
 
 .search-button img {
