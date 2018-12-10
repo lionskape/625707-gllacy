@@ -108,6 +108,7 @@ a:active {
     border-radius: 20px;
     color: #333;
     background-color: #f7f6f3;
+    text-decoration: none;
 }
 
 /* .user-navigation-button {
@@ -117,6 +118,7 @@ a:active {
 .navigation-active-button a {
   background-color: #d07058;
   border-radius: 30px;
+  text-decoration: none;
 }
 
 .user-main-navigation-list {
@@ -189,6 +191,7 @@ a:active {
 
 .blog-info-header {
     font-weight: 500;
+    margin: 0;
 }
 
 .blog-info a {
@@ -275,9 +278,6 @@ a:active {
     padding-bottom: 9px;
 }
 
-.site-navigation-item {
-    margin-right: 25px;
-}
 
 .user-main-navigation-list {
     display: flex;
@@ -441,7 +441,7 @@ a:active {
 }
 
 .blog-info p {
-  width: 51%;
+    width: 51%;
 }
 
 
@@ -467,8 +467,8 @@ a:active {
 }
 
 .subscribe-form {
-  margin: 0 0 0 21px;
-  padding: 7px 0 0 0;
+    margin: 0 0 0 20px;
+    padding: 7px 0 0 0;
 }
 
 .subscribe-form input[type=email] {
@@ -477,7 +477,7 @@ a:active {
     border: 1px solid #d3d3d3;
     border-radius: 5px;
     padding: 10px 13px;
-    width: 339px;
+    width: 368px;
 }
 
 .subscribe-send-btn {
@@ -610,10 +610,10 @@ input[type="radio"].visually-hidden {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 335px;
-    align-items: stretch;
+    height: 40px;
 }
 
 .for-suppliers {
@@ -634,9 +634,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
 }
 .footer-contact-item {
-    margin-right: 26px;
     margin-top: 0;
-    margin-bottom: 10px;
     min-width: 110px;
 }
 
@@ -702,7 +700,7 @@ input[type="radio"].visually-hidden {
     margin: 0;
     z-index: 9;
     bottom: 80px;
-    left: -17px;
+    left: 3px;
 }
 
 .catalog-pagination {
@@ -721,9 +719,6 @@ input[type="radio"].visually-hidden {
     margin-right: 25px;
 }
 
-.site-navigation-item {
-    margin-right: 25px;
-}
 
 .footer-copyright p {
     margin-top: 0;
@@ -861,11 +856,13 @@ input[type="radio"].visually-hidden {
 
 .appointment-modal {
     color: #000000;
+    z-index: ;
 
     display: block;
     position: fixed;
-    top: 350px;
-    left: 819px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 468px;
 
     padding: 20px 25px;
