@@ -204,6 +204,8 @@ a:active {
 }
 
 .blog-info-header {
+  font-size: 16px;
+  line-height: 21px;
     font-weight: 500;
     margin: 0;
 }
@@ -277,9 +279,8 @@ a:active {
 }
 
 .main-header {
-    margin: 9px 27px 0;
     width: 1150px;
-    margin: 9px auto 28px;
+    margin: 9px auto 2px;
 }
 
 .main-header-logo {
@@ -310,7 +311,7 @@ a:active {
 } */
 
 .search-button, .login-button, .basket-button{
-    padding: 8px 35px;
+    padding: 8px 40px;
     border-radius: 20px;
     font-size: 14px;
     line-height: 16px;
@@ -354,7 +355,7 @@ a:active {
 
 .basket-button {
     position: relative;
-    padding-right: 18px;
+    padding-right: 15px;
 }
 .basket-button::before {
     background-image: url(../img/header-img/basket.svg);
@@ -371,7 +372,6 @@ a:active {
 .first-banners-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin: 12px 0 0 0;
 }
 
@@ -392,6 +392,7 @@ a:active {
 .rasp-banner {
     background-color: #76223c;
     background-image: url("../img/background/main-banner-rasp.jpg");
+    margin-right: 29px;
 }
 
 .rasp-banner .main-banner-prod {
@@ -461,19 +462,20 @@ a:active {
 }
 
 .blog-info {
-    padding-top: 26px;
+    padding-top: 24px;
     padding-left: 20px;
-    margin-right: 25px;
+    margin-right: 27px;
 }
 
 .blog-info p {
-    width: 51%;
+    width: 52%;
+    margin: 0;
+    margin-top: 5px;
 }
 
 
 .banners-wrapper {
     display: flex;
-    justify-content: space-between;
 }
 
 .main-banner {
@@ -592,7 +594,7 @@ a:active {
     margin: 0;
     padding: 0;
     width: 380px;
-    margin-left: 26px;
+    margin-left: 0px;
     margin-right: 20px;
     display: flex;
 }
@@ -629,7 +631,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social-media-item {
-    margin-right: 16px;
+    margin-right: 12px;
 }
 
 .footer-contact-list {
@@ -951,6 +953,10 @@ input[type="radio"].visually-hidden {
     font-size: 0;
     background-color: transparent;
     border: 0;
+}
+
+.logo-catalog {
+  margin-right: 40px;
 }
 
 .basket-catalog-popup {
