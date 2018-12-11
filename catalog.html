@@ -11,13 +11,13 @@
   <header class="main-header">
     <nav class="main-navigation">
       <div class="main-nav-wrapper">
-        <a class="main-header-logo" href="./index.html">
-          <img src="img/header-img/logo.svg" width="154" height="64" alt="Магазин "Gllacy Shop"">
+        <a class="main-header-logo logo-catalog" href="./index.html">
+          <img src="img/header-img/logo.svg" width="154" height="64" alt="Магазин 'Gllacy Shop'">
         </a>
         <ul class="site-navigation-list">
-          <li class="site-navigation-item navigation-active-button"><a href="#">Каталог</a></li>
-          <li class="site-navigation-item "><a href="#">Доставка и оплата</a></li>
-          <li class="site-navigation-item"><a href="#">О Компании</a></li>
+          <li class="site-navigation-item navigation-active-button"><a href="#"><span>Каталог</span></a></li>
+          <li class="site-navigation-item "><a href="#"><span>Доставка и оплата</span></a></li>
+          <li class="site-navigation-item"><a href="#"><span>О Компании</span></a></li>
         </ul>
       </div>
 
@@ -29,13 +29,12 @@
         </li>
         <li class="user-main-navigation-item">
           <a href="#" class="user-navigation-button login-button">
-            <img src="img/header-img/login-pic.svg" width="21" height="19" alt="Кнопка входа в аккаунт">
+            Вход
           </a>
         </li>
         <li class="user-main-navigation-item user-catalog-navigation-popup">
-          <a class="user-navigation-button basket-button">
-            <img src="img/header-img/catalog-basket.svg" width="21" height="20" alt="Корзина товаров">
-            <span class="catalog-basket-text">2 товара</span>
+          <a class="user-navigation-button basket-button pushed-basket-button">
+            2 товара
           </a>
           <section class="popup basket-catalog-popup">
               <table class="basket-catalog-list">
@@ -80,8 +79,7 @@
               </table>
               <form class="basket-catalog-order-form" action="#" method="post">
                   <p class="basket-catalog-order-total-price">
-                  <b>Итого</b>
-                  <b>750 руб</b>
+                    Итого: 750 руб
                   </p>
                   <a class="btn send-btn basket-order-btn" href="#">Оформить заказ</a>
               </form>
@@ -94,7 +92,9 @@
 
     <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
+        <li>»</li>
         <li><a href="catalog.html">Каталог</a></li>
+        <li>»</li>
         <li><a>Сливочное</a></li>
     </ul>
     <h1 class="page-title">Сливочное мороженое</h1>
@@ -316,9 +316,9 @@
           </a>
         </li>
       </ul>
+
       <ul class="footer-contact-list">
         <li class="footer-contact-item for-suppliers">
-          <img src="img/footer-hurt.svg" width="15" height="13" alt="Сердечко">
           <a href="#">Для поставщиков</a>
         </li>
         <li class="footer-contact-item"><a href="#">Наши документы</a></li>
