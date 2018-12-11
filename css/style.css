@@ -768,10 +768,10 @@ input[type="radio"].visually-hidden {
     left: -15px;
     z-index: 1;
     display: block;
-    
+
     border-radius: 7px;
     background-color: #f8f7f4;
-    
+
 }
 
 .main-catalog-popup-item a {
@@ -794,7 +794,7 @@ input[type="radio"].visually-hidden {
 
     padding: 10px 0 12px 19px;
     margin: 0;
-    
+
     border-bottom: 1px solid #d1d0ce;
 }
 
@@ -964,10 +964,45 @@ input[type="radio"].visually-hidden {
     z-index: 1;
     top: 29px;
     right: 0;
+    padding: 20px 15px;
 
     width: 505px;
     border-radius: 5px;
     background-color: #f8f7f4;
+}
+
+.basket-catalog-items p {
+    margin: 0;
+    padding: 5px 0 0 13px;
+}
+.basket-catalog-items td {
+  padding: 10px 0;
+}
+
+.basket-catalog-items td {
+    padding: 0;
+}
+
+.basket-catalog-items td:first-of-type {
+    width: 26px;
+}
+
+.basket-catalog-items td:nth-of-type(2) {
+  width: 33px;
+}
+
+.basket-catalog-items td:nth-of-type(3) {
+  width: 230px;
+  padding: 10px 0;
+}
+
+.basket-catalog-items td:nth-of-type(4) {
+  width: 154px;
+  text-align: center;
+}
+
+.basket-catalog-items td:last-of-type {
+  width: 68px;
 }
 
 .user-catalog-navigation-popup {
@@ -990,10 +1025,12 @@ td > img {
 
 .basket-catalog-order-form {
     align-self: flex-end;
+    margin-right: -20px;
 }
 
 .basket-catalog-list {
     border-bottom: 1px solid #000000;
+    border-collapse: collapse;
 }
 
 .basket-order-btn {
