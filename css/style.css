@@ -1105,3 +1105,30 @@ td > img {
     display: none;
     padding: 10px 20px;
 }
+
+.catalog-ice-btn:hover {
+    background-color: #ed705e;
+    text-shadow: 0 2px 5px rgba(185, 30, 6, 0.76);
+}
+
+.catalog-item::after {
+    position: absolute;
+    content: '';
+    left: -13px;
+    top: -8px;
+    width: 293px;
+    height: 405px;
+    border-radius: 5px;
+}
+
+.catalog-item:focus::after, .catalog-item:hover::after {
+    background-color: rgba(248,247,244,.2);
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,.4);
+    z-index: 5;
+}
+
+.catalog-item:focus>.catalog-ice-btn, 
+.catalog-item:hover>.catalog-ice-btn {
+    display: block;
+    z-index: 7;
+}
