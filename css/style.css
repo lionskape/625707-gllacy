@@ -1322,6 +1322,14 @@ td > img {
 
 .footer-contact-item a:hover,
 .footer-copyright-link:hover {
-  border-bottom: 1px solid #ffbc9e;
+    border-bottom: 1px solid #ffbc9e;
 }
 
+.catalog-item-title a {
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,.4);
+}
+
+.catalog-item-title a:hover {
+    border-bottom: 1px solid #ffbc9e;
+}
