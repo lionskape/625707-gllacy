@@ -40,24 +40,26 @@ GL.searchButton.addEventListener('mouseout', function(e) {
 GL.loginPopup.addEventListener('mouseover', function(e) {
   e.preventDefault();
   GL.loginWin.add('showPopup');
-})
+});
 
 GL.loginPopup.addEventListener('mouseout', function(e) {
   e.preventDefault();
   GL.loginWin.remove('showPopup');
-})
+});
 
 GL.mapButton.addEventListener('click', function (e) {
   e.preventDefault();
   GL.appointmentModal.classList.add('modal-show');
-})
+});
+
 GL.closeModal = function (e) {
   e.preventDefault();
   GL.appointmentModal.classList.remove('modal-show');
-}
+};
+
 GL.modalCloseBtn.addEventListener('click', GL.closeModal);
 window.addEventListener('keydown', function(e) {
   if (e.keyCode === 27 && GL.appointmentModal.classList.contains('modal-show')) {
     GL.closeModal(e);
   }
-})
+});
