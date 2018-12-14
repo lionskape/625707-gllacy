@@ -711,7 +711,10 @@ input[type="radio"].visually-hidden {
 .catalog-item {
     width: 270px;
     margin-bottom: 40px;
-    margin-right: 20px;
+}
+
+.catalog-item:not(:nth-child(4n)) {
+    margin-right: 26px;
 }
 
 .catalog-item img {
@@ -1092,11 +1095,6 @@ td > img {
     background-position: 0 0;
 }
 
-.pushed-basket-button {
-  color: #000000;
-  background-color: #f8f7f4;
-}
-
 .user-main-navigation-item {
   margin-left: 13px;
 }
@@ -1312,6 +1310,11 @@ td > img {
 
 .basket-button {
   color: #ffffff;
+}
+
+.pushed-basket-button {
+  color: #000000;
+  background-color: #f8f7f4;
 }
 
 .footer-contact-item a,
