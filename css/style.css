@@ -47,12 +47,6 @@ a:active {
 }
 
 
-.send-btn:hover,
-.send-btn:focus {
-    color: #fefefe;
-    background-color: #f26843;
-}
-
 .send-btn:active {
     color: #fceeec;
     box-shadow: 0px 2px 2px 0 #ac1000;
@@ -158,17 +152,18 @@ a:active {
 
 
 .advantage {
-    color: #323232;
     min-height: 256px;
     margin: 0;
-    padding: 24px 20px;
+    padding: 20px 20px;
     border-radius: 15px;
     color: #323232;
-
-    background-color: rgb(238, 227, 201);
+    background-color: #f1e8d5;
     background-image: url("../img/background/advantage-background.png");
-    background-position: 0 0;
+    background-position: top left;
     background-repeat: repeat;
+    background-size: auto;
+    padding-left: 20px;
+    margin-bottom: 5px;
 }
 
 
@@ -419,6 +414,8 @@ a:active {
   vertical-align: top;
   text-shadow: 0 2px 5px rgba(160,32,11,.76);
   border-radius: 30px;
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35, var(--dusty-orange));
 }
 
 .banner-btn-jam, .banner-btn-choco {
@@ -486,6 +483,7 @@ a:active {
 
 .banners-wrapper {
     display: flex;
+    margin-bottom: 35px;
 }
 
 .main-banner {
@@ -546,6 +544,7 @@ a:active {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .advantage-item {
@@ -679,10 +678,16 @@ input[type="radio"].visually-hidden {
 
 .footer-copyright {
     margin-left: auto;
+    margin-top: -16px;
+    margin-right: -1px;
 }
 
-.footer-copyright-logo img {
-  margin-left: -10px;
+
+.footer-copyright-logo {
+    height: 39px;
+    margin: 0 0 4px;
+    display: block;
+    width: 108px;
 }
 
 .footer-wrapper-container {
@@ -760,7 +765,12 @@ input[type="radio"].visually-hidden {
 
 
 .footer-copyright p {
-    margin-top: 0;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 2px;
+    margin-right: 1px;
 }
 
 .footer-copyright a {
@@ -780,10 +790,10 @@ input[type="radio"].visually-hidden {
     top: 40px;
     left: -15px;
     z-index: 1;
-    display: block;
+    display: none;
 
     border-radius: 7px;
-    background-color: #f8f7f4;
+    background-color:#f8f7f4;
 
 }
 
@@ -813,8 +823,12 @@ input[type="radio"].visually-hidden {
 
 .main-catalog-popup-item a:hover,
 .main-catalog-popup-item a:focus {
-    background-color: rgb(238, 219, 213);
+    background-color:#fbded7;
     border-radius: 5px;
+}
+
+.main-catalog-popup-item a:active  {
+    background-color: #f6b5a5;
 }
 
 .user-navigation-popup {
@@ -829,6 +843,7 @@ input[type="radio"].visually-hidden {
     right: -3px;
 
     padding: 20px 15px;
+    display: none;
 
     border-radius: 6px;
     background-color: #f7f8f4;
@@ -857,6 +872,7 @@ input[type="radio"].visually-hidden {
 
     z-index: 2;
     padding: 19px;
+    display: none;
 
     border-radius: 6px;
 
@@ -903,11 +919,10 @@ input[type="radio"].visually-hidden {
     color: #000000;
     z-index: 20;
 
-    display: block;
+    display: none;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 37%;
     width: 468px;
 
     padding: 20px 25px;
@@ -1127,8 +1142,186 @@ td > img {
     z-index: 5;
 }
 
-.catalog-item:focus>.catalog-ice-btn, 
+.catalog-item:focus>.catalog-ice-btn,
 .catalog-item:hover>.catalog-ice-btn {
     display: block;
     z-index: 7;
 }
+
+.showPopup {
+    display: block;
+}
+
+.search-button:hover {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+
+.hover-search-fill {
+  fill: #000000;
+}
+
+.main-map {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    height: 427px;
+    margin: 0 -27px 1px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    color: #323232;
+    background-color: #c7c6c5;
+    background-image: url(../img/map/map-bckg.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.map-legend {
+  padding: 0;
+  margin: 0;
+}
+
+.map-legend {
+    position: absolute;
+    top: 62px;
+    right: 28px;
+    width: 306px;
+    padding-top: 38px;
+    padding-left: 25px;
+    padding-right: 24px;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #fff;
+}
+
+.map-form-button {
+    margin-top: 25px;
+    margin-bottom: 32px;
+    padding: 10px 28px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.map-adress-words {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+
+    margin: 0;
+    margin-top: -7px;
+}
+
+.map-adress {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+
+    margin: 0;
+}
+
+.map-contacts {
+  font-weight: 400px;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.map-contacts strong {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: -14px;
+    display: block;
+}
+
+.main-map::after {
+    background-image: url(../img/pin.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    content: "";
+    position: absolute;
+    bottom: 157px;
+    left: 263px;
+    width: 80px;
+    height: 140px;
+}
+
+.modal-show {
+    display: block;
+
+    animation: bounce .8s;
+}
+
+.appointment-close::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    width: 18px;
+    height: 3px;
+    background-color: #231f20;
+    transform: rotate(45deg);
+}
+
+.appointment-close::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    width: 18px;
+    height: 3px;
+    background-color: #231f20;
+    transform: rotate(-45deg);
+}
+
+.send-btn:hover,
+.send-btn:focus {
+    box-shadow: 0 2px 2px 0 #ac1000;
+    background-color: #ed705e;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-1000px);
+  }
+
+  70% {
+    transform: translateY(20px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.login-button:hover,
+.login-button:focus {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.login-button:hover::before {
+    background-image: url(../img/header-img/black-login.svg);
+}
+
+.basket-button {
+  color: #ffffff;
+}
+
+.footer-contact-item a,
+.footer-copyright-link {
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,.4);
+}
+
+.footer-contact-item a:hover,
+.footer-copyright-link:hover {
+  border-bottom: 1px solid #ffbc9e;
+}
+
