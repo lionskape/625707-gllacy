@@ -784,14 +784,15 @@ input[type="radio"].visually-hidden {
     font-size: 14px;
     line-height: 16px;
     list-style: none;
+    font-weight: 400;
 
     margin: 0;
     padding: 0;
     min-width: 143px;
 
     position: absolute;
-    top: 40px;
-    left: -15px;
+    top: 100%;
+    left: -16px;
     z-index: 1;
     display: none;
 
@@ -812,6 +813,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-popup-link-header {
     border-bottom: 1px solid rgb(209, 208, 206, .4);
+    font-weight: 700;
 }
 
 .catalog-popup-link-header p {
@@ -1344,4 +1346,16 @@ td > img {
 
 .tabl-vis {
     display: flex;
+}
+
+.user-navigation-popup:hover .main-catalog-popup-list {
+    display: block;
+}
+
+.user-search-popup:hover .search-popup {
+    display:block;
+}
+
+.user-login-popup:hover .popup-login {
+    display: block;
 }
