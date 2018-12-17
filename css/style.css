@@ -885,6 +885,7 @@ input[type="radio"].visually-hidden {
 }
 
 .popup-login input {
+  font: inherit;
   width: 230px;
   padding: 8px;
   border: 1px solid #d3d3d3;
@@ -994,6 +995,7 @@ input[type="radio"].visually-hidden {
     color: #323232;
     font-size: 13px;
     line-height: 16px;
+    font-weight: 400;
 
     display: none;
     flex-direction: column;
@@ -1003,7 +1005,7 @@ input[type="radio"].visually-hidden {
     right: 0;
     padding: 20px 15px;
 
-    width: 505px;
+    width: 531px;
     border-radius: 5px;
     background-color: #f8f7f4;
 }
@@ -1029,7 +1031,7 @@ input[type="radio"].visually-hidden {
 }
 
 .basket-catalog-items td:nth-of-type(3) {
-  width: 230px;
+  width: 236px;
   padding: 10px 0;
 }
 
@@ -1079,6 +1081,8 @@ td > img {
     padding: 10px 15px;
 
     margin: 0 15px 10px 0;
+    display: block;
+    margin-left: 300px;
 }
 
 .basket-catalog-order-total-price {
@@ -1132,7 +1136,7 @@ td > img {
     left: -13px;
     top: -8px;
     width: 293px;
-    height: 405px;
+    height: 130%;
     border-radius: 5px;
 }
 
@@ -1358,4 +1362,16 @@ td > img {
 
 .user-login-popup:hover .popup-login {
     display: block;
+}
+
+.pushed-basket:hover .basket-catalog-popup {
+    display:block;
+}
+
+.ice-cream-count {
+    color: #999999;
+}
+
+.ice-cream-count b {
+  color: #323232;
 }
