@@ -15,11 +15,11 @@ img {
     height: auto;
 }
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *, *::after, *::before {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 a {
@@ -1063,9 +1063,12 @@ td > img {
 }
 
 .basket-catalog-order-form {
-    align-self: flex-end;
     margin-right: -20px;
+    display: flex;
+    flex-direction: column;
 }
+
+
 
 .basket-catalog-list {
     border-bottom: 1px solid #000000;
@@ -1082,7 +1085,6 @@ td > img {
 
     margin: 0 15px 10px 0;
     display: block;
-    margin-left: 300px;
 }
 
 .basket-catalog-order-total-price {
