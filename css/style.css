@@ -514,6 +514,7 @@ a:active {
     border-radius: 5px;
     padding: 10px 13px;
     width: 368px;
+    font-weight: 700;
 }
 
 .subscribe-send-btn {
