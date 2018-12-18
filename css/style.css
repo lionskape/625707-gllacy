@@ -1366,12 +1366,14 @@ td > img {
 }
 
 .user-navigation-popup:hover .main-catalog-popup-list,
-.user-navigation-popup:focus-within .main-catalog-popup-list {
+.user-navigation-popup:focus-within .main-catalog-popup-list,
+.user-navigation-popup:active .main-catalog-popup-list {
     display: block;
 }
 
 .user-search-popup:hover .search-popup,
-.user-search-popup:focus-within .search-popup {
+.user-search-popup:focus-within .search-popup,
+.user-search-popup:active .search-popup {
     display:block;
 }
 
@@ -1381,12 +1383,14 @@ td > img {
 }
 
 .user-login-popup:hover .popup-login,
-.user-login-popup:focus-within .popup-login {
+.user-login-popup:focus-within .popup-login,
+.user-login-popup:active .popup-login {
     display: block;
 }
 
 .pushed-basket:hover .basket-catalog-popup,
-.pushed-basket:focus-within .basket-catalog-popup {
+.pushed-basket:focus-within .basket-catalog-popup,
+.pushed-basket:active .basket-catalog-popup {
     display:block;
 }
 
