@@ -213,6 +213,10 @@ a:active {
     line-height: 30px;
 }
 
+.blog-info a:hover {
+  color: #ffbc9e;
+}
+
 .subscribe-sect {
     background-image: url("../img/background/banner-2.svg");
     padding: 6px;
@@ -793,7 +797,7 @@ input[type="radio"].visually-hidden {
 
     position: absolute;
     top: 100%;
-    left: -16px;
+    left: -7px;
     z-index: 1;
     display: none;
 
@@ -1159,7 +1163,8 @@ td > img {
     display: block;
 }
 
-.search-button:hover {
+.search-button:hover,
+.search-button:focus {
   color: #323232;
   background-color: #ffffff;
 }
@@ -1313,12 +1318,17 @@ td > img {
     background-color: #ffffff;
 }
 
-.login-button:hover::before {
+.login-button:hover::before,
+.login-button:focus::before {
     background-image: url(../img/header-img/black-login.svg);
 }
 
 .basket-button {
   color: #ffffff;
+}
+
+.basket-button:hover {
+  color: white;
 }
 
 .pushed-basket-button {
@@ -1361,6 +1371,11 @@ td > img {
 
 .user-search-popup:hover .search-popup {
     display:block;
+}
+
+.search-button:hover .takoe,
+.search-button:focus .takoe {
+    fill: black;
 }
 
 .user-login-popup:hover .popup-login {
