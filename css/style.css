@@ -1365,11 +1365,13 @@ td > img {
     display: flex;
 }
 
-.user-navigation-popup:hover .main-catalog-popup-list {
+.user-navigation-popup:hover .main-catalog-popup-list,
+.user-navigation-popup:focus-within .main-catalog-popup-list {
     display: block;
 }
 
-.user-search-popup:hover .search-popup {
+.user-search-popup:hover .search-popup,
+.user-search-popup:focus-within .search-popup {
     display:block;
 }
 
@@ -1378,11 +1380,13 @@ td > img {
     fill: black;
 }
 
-.user-login-popup:hover .popup-login {
+.user-login-popup:hover .popup-login,
+.user-login-popup:focus-within .popup-login {
     display: block;
 }
 
-.pushed-basket:hover .basket-catalog-popup {
+.pushed-basket:hover .basket-catalog-popup,
+.pushed-basket:focus-within .basket-catalog-popup {
     display:block;
 }
 
