@@ -1291,7 +1291,7 @@ td > img {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-1000px);
+    transform: translateY(10000px);
   }
 
   70% {
