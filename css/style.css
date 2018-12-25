@@ -825,7 +825,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-catalog-popup-item a {
-    font-weight: 700;
+    font-weight: 400;
     color: black;
 
     margin: 0;
@@ -917,10 +917,19 @@ input[type="radio"].visually-hidden {
     margin-bottom: 20px;
 }
 
+.popup-login input::-webkit-input-placeholder,
+.search-popup input::-webkit-input-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #999999;
+}
+
 .popup-login a {
     color: #323232;
     font-size: 13px;
     line-height: 24px;
+    font-weight: 400;
     text-decoration: underline;
 
     display: block;
@@ -962,7 +971,7 @@ input[type="radio"].visually-hidden {
 
 .appointment-modal h1 {
     font-size: 24px;
-    line-height: 20px;
+    line-height: 28px;
     font-weight: 500;
 }
 
@@ -980,6 +989,14 @@ input[type="radio"].visually-hidden {
     border-radius: 5px;
     margin-bottom: 20px;
     width: 265px;
+}
+
+.modal input::-webkit-input-placeholder,
+.modal textarea::-webkit-input-placeholder {
+    font-weight: 400;
+    color: #999999;
+    font-size: 16px;
+    line-break: 24px;
 }
 
 .modal input:hover {
@@ -1101,7 +1118,7 @@ td > img {
 
 
 .basket-catalog-list {
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #cacac7;
     border-collapse: collapse;
 }
 
@@ -1425,4 +1442,9 @@ td > img {
 
 .ice-cream-count b {
     color: #323232;
+    font-weight: 400;
+}
+
+.ice-cream-fullP {
+    font-weight: 400;
 }
