@@ -1621,4 +1621,163 @@ td > img {
     height: 60px;
     background-position: 0 0;
     background-image: url(../img/hit.svg);
-  }
+}
+
+
+.first-filters-wrapper {
+    display: flex;
+}
+
+.filters-container fieldset {
+    border: 0;
+    margin: 0;
+    margin-right: 17px;
+    padding: 0;
+}
+
+.filters-container legend {
+    margin-left: 15px;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #ffffff;
+}
+
+legend {
+    box-sizing: border-box;
+    padding: 0;
+    display: table;
+}
+
+.filters-wrapper {
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 23px;
+    box-sizing: content-box;
+}
+
+.choose-filter {
+    position: relative;
+    display: inline-block;
+    padding: 6px 8px 7px 15px;
+
+    vertical-align: top;
+}
+
+.sorting-filter-val {
+    padding-right: 3px;
+    border: 0;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.select-icon {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.sorting-filter-val:hover,
+.sorting-filter-val:focus {
+    color: #000000;
+}
+
+.sorting-filter-val:hover+.select-icon .select-path {
+    fill: #000000;
+}
+
+.range-val  {
+    position: relative;
+    width: 217px
+}
+
+.range-val legend{
+    position: relative;
+}
+
+.price-input-leg label {
+    font-size: 14px;
+    line-height: 16px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 16px;
+}
+
+.price-max .price-min {
+    widows: 60px;
+    margin: -2px 6px 0 0;
+}
+
+.price-input-leg input {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 16px;
+    width: 55px;
+    border: 0;
+    background: 0 0;
+    margin: 0;
+    padding: 0;
+}
+
+.price-input-leg::after {
+    content: "";
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 45%;
+    left: 57%;
+    width: 7px;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.range-val .filters-wrapper {
+    padding: 8px 12px;
+    width: 197px;
+    height: 20px;
+}
+
+.range-controls {
+    position: absolute;
+    bottom: 17px;
+    left: 17px;
+}
+
+.scope {
+    width: 175px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, .4);
+    margin: 0 0 0 5px;
+}
+
+.bbar {
+    margin: 0 0 0 25px;
+    background-color: #ffffff;
+    height: 4px;
+    width: 103px;
+}
+
+.range-tog {
+    position: absolute;
+    top: -8px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0,1,1,.2);
+    cursor: pointer;
+}
+
+.range-tog-min {
+    left: 17px;
+}
+
+.range-tog-max {
+    right: 43px;
+}

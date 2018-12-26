@@ -98,10 +98,52 @@
         <li><a>Сливочное</a></li>
     </ul>
     <h1 class="page-title-catalog">Сливочное мороженое</h1>
-    <!-- <p class="main-contacts">
-      <p>C 10 до 20 ежедневно</p>
-      <b>8 812 450 25 25</b>
-    </p> -->
+    <section class="filters-container">
+      <h2 class="visually-hidden">Фильтры для поиска</h2>
+      <form name="filters" method="POST" action="https://echo.htmlacademy.ru">
+        <div class="first-filters-wrapper">
+          <fieldset class="sorting-val">
+            <legend>Сортировка</legend>
+            <div class="filters-wrapper choose-filter">
+              <select class="sorting-filter-val" id="filters-sorting-val" name="filters-sorting-val">
+                <option value="popular">по популярности</option>
+                <option value="not-expensive">сначала не дорогие</option>
+                <option value="expensive"> сначала дорогие</option>
+                <option value="fat-content">по жирности</option>
+              </select>
+              <svg class="select-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path class="select-path" fill="#ffffff" d="M5.5 10L0 0h11"/>
+              </svg>
+            </div>
+          </fieldset>
+
+          <fieldset class="range-val">
+            <legend class="price-input-leg">
+              <span class="range-price">Цена:</span>
+              <label class="price-min">
+                <input type="text" name="price-min" value="100 руб.">
+              </label>
+              <label class="price-max">
+                <input type="text" name="price-max" value="500 руб.">
+              </label>
+            </legend>
+            <div class="filters-wrapper">
+              <div class="range-controls">
+                <div class="scope">
+                  <div class="bbar"></div>
+                </div>
+                <div class="range-tog range-tog-min"></div>
+                <div class="range-tog range-tog-max"></div>
+              </div>
+            </div>
+          </fieldset>
+
+
+        </div>
+        <div class="second-filters-wrapper"></div>
+      </form>
+
+    </section>
     <section class="catalog">
       <h2 class="visually-hidden">Список морженого</h2>
       <ul class="catalog-list">
