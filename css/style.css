@@ -550,11 +550,13 @@ a:active {
     width: 1150px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 42px;
 }
 
 .advantage {
     padding-left: 20px;
     margin: 0 0 40px;
+    margin-top: -22px;
 }
 
 .adavantage-header {
@@ -618,7 +620,7 @@ a:active {
 
 .main-footer {
     width: 1150px;
-    margin: 35px auto 30px;
+    margin: 42px auto 30px;
 }
 
 .footer-social-media-list {
@@ -1512,6 +1514,7 @@ td > img {
     width: 900px;
     margin: 0 auto;
     padding: 0 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -1579,8 +1582,8 @@ td > img {
 
 .slider-controls {
     position: absolute;
-    bottom: 63px;
-    left: 0;
+    bottom: 26px;
+    left: -143px;
     z-index: 20;
 
     font-size: 0;
@@ -1588,8 +1591,8 @@ td > img {
 
 .slider-controls label {
     display: inline-block;
-    width: 17px;
-    height: 17px;
+    width: 20px;
+    height: 20px;
     margin-right: 8px;
 
     vertical-align: top;
@@ -1625,6 +1628,10 @@ td > img {
 #product-2:checked ~ .site-wrapper label[for="product-2"],
 #product-3:checked ~ .site-wrapper label[for="product-3"] {
     background-color: #ffffff;
+}
+
+.main-hit-catalog {
+    margin-top: 37px;
 }
 
 .main-hit-catalog-list {
