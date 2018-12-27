@@ -119,11 +119,7 @@ a:active {
     background-color: #8996a6;
 } */
 
-.navigation-active-button a {
-    background-color: #d07058;
-    border-radius: 30px;
-    text-decoration: none;
-}
+
 
 .navigation-active-button span {
     border: 0;
@@ -848,6 +844,7 @@ input[type="radio"].visually-hidden {
 
 }
 
+
 .main-catalog-popup-item a {
     font-weight: 400;
     color: black;
@@ -856,6 +853,12 @@ input[type="radio"].visually-hidden {
     padding: 10px 0 12px 19px;
 
     display: block;
+}
+
+.navigation-active-button a:not(.catalog-popup-link) {
+  background-color: #d07058;
+  border-radius: 30px;
+  text-decoration: none;
 }
 
 .catalog-popup-link-header {
