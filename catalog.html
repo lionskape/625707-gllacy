@@ -138,9 +138,62 @@
             </div>
           </fieldset>
 
+          <fieldset class="radio-filters">
+            <legend>Жирность:</legend>
+            <div class="filters-wrapper">
+              <ul class="filter-check-list">
+                <li class="filter-check-item">
+                  <input class="radio-filter-btn" type="radio" id="radio-fil-0" name="radio-filter-btn" value="0">
+                  <label for="radio-fil-0" tabindex="0">0%</label>
+                </li>
+                <li class="filter-check-item">
+                  <input class="radio-filter-btn" type="radio" id="radio-fil-1" name="radio-filter-btn" value="10">
+                  <label for="radio-fil-1" tabindex="0">10%</label>
+                </li>
+                <li class="filter-check-item">
+                  <input class="radio-filter-btn" type="radio" id="radio-fil-2" name="radio-filter-btn" value="30">
+                  <label for="radio-fil-2" tabindex="0">до 30%</label>
+                </li>
+                <li class="filter-check-item">
+                  <input class="radio-filter-btn" type="radio" id="radio-fil-3" name="radio-filter-btn" value="30+">
+                  <label for="radio-fil-3" tabindex="0">выше 30%</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+
 
         </div>
-        <div class="second-filters-wrapper"></div>
+        <div class="second-filters-wrapper">
+          <fieldset class="checkbox-set">
+            <legend>Наполнители</legend>
+            <div class="filters-wrapper">
+              <ul class="filter-check-list">
+                <li class="filter-check-item">
+                  <input class="check-filter-btn" type="checkbox" id="choco-check" name="chocko-check" value="chocolate" checked>
+                  <label for="chocko-check" tabindex="0">шоколадные</label>
+                </li>
+                <li class="filter-check-item">
+                  <input class="check-filter-btn" type="checkbox" id="shugar-check" name="shugar-check" value="shugar" checked>
+                  <label for="shugar-check" tabindex="0">сахарные присыпки</label>
+                </li>
+                <li class="filter-check-item">
+                  <input class="check-filter-btn" type="checkbox" id="fruits-check" name="fruits-check" value="fruits">
+                  <label for="fruits-check" tabindex="0">фрукты</label>
+                </li>
+                <li class="filter-check-item">
+                  <input class="check-filter-btn" type="checkbox" id="syrup-check" name="syrup-check" value="syrup">
+                  <label for="syrup-check" tabindex="0">сиропы</label>
+                </li>
+                <li class="filter-check-item">
+                  <input class="check-filter-btn" type="checkbox" id="jam-check" name="jam-check" value="jam">
+                  <label for="jam-check" tabindex="0">джемы</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <button class="filters-send" type="submit">Применить</button>
+        </div>
       </form>
 
     </section>
@@ -328,16 +381,26 @@
           <button class="send-btn catalog-ice-btn">Быстрый просмотр</button>
         </li>
       </ul>
-    </section>
-    <section class="catalog-pagination">
       <ul class="catalog-pagination-list">
-        <li class="catalog-pagination-item"><a href="#"><</a></li>
+        <li class="catalog-pagination-item">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
+              <path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"></path>
+            </svg>
+          </a>
+        </li>
         <li class="catalog-pagination-item catalog-pagination-item-choosed"><a>1</a></li>
         <li class="catalog-pagination-item"><a href="#">2</a></li>
         <li class="catalog-pagination-item"><a href="#">3</a></li>
         <li class="catalog-pagination-item"><a href="#">4</a></li>
         <li class="catalog-pagination-item"><a href="#">5</a></li>
-        <li class="catalog-pagination-item"><a href="#">></a></li>
+        <li class="catalog-pagination-item">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
+              <path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/>
+            </svg>
+          </a>
+        </li>
       </ul>
     </section>
 
