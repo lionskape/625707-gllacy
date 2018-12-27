@@ -339,7 +339,7 @@ a:active {
 
 .main-header {
     width: 1150px;
-    margin: 0 auto 2px;
+    margin: 0 auto -2px;
 }
 
 .main-header-logo {
@@ -1016,7 +1016,7 @@ input[type="radio"].visually-hidden {
 }
 
 .logo-catalog {
-    margin-right: 40px;
+    margin-right: 24px;
 }
 
 .basket-catalog-popup {
@@ -1617,7 +1617,7 @@ td > img {
 .filters-container fieldset {
     border: 0;
     margin: 0;
-    margin-right: 17px;
+    margin-right: 12px;
     padding: 0;
     font-weight: 500;
 }
@@ -1849,15 +1849,75 @@ svg:not(:root) {
 
 .second-filters-wrapper li {
     padding-right: 17px;
-    padding-left: 31px;
+    padding-left: 33px;
 }
 
 .filters-send {
     color: #ffffff;
-    padding: 8px 23px;
+    padding: 8px 25px;
     align-self: flex-end;
     border: 2px solid #ffffff;
     background-color: rgba(255,255,255,.2);
     cursor: pointer;
     border-radius: 25px;
+    margin-left: -5px;
+}
+
+.time-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.main-contacts {
+    margin-top: -3px;
+    margin-right: -25px;
+}
+
+.site-contacts {
+    width: 215px;
+    height: 100%;
+    text-align: center;
+}
+
+.site-contacts {
+    margin: 0;
+    padding: 0;
+    margin-right: -23px;
+    margin-top: -16px;
+}
+
+.site-contacts p:first-of-type {
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    margin-bottom: 6px;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+.site-contacts p:nth-of-type(2) {
+  padding: 0;
+  margin: -3px;
+}
+
+.site-contacts a {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.main-index {
+  margin-right: -166px;
+  margin-top: -15px;
+}
+
+.index-contacts {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 0;
 }

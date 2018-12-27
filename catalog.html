@@ -5,7 +5,7 @@
   <title>Глейси-каталог</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="./css/normolize.css" rel="stylesheet">
-  <link href="./css/style.min.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
@@ -131,14 +131,21 @@
     </nav>
   </header>
   <main class="base-container catalog-base">
-
-    <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li>»</li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li>»</li>
-        <li><a>Сливочное</a></li>
-    </ul>
+    <section class="time-info">
+      <ul class="breadcrumbs">
+          <li><a href="index.html">Главная</a></li>
+          <li>»</li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li>»</li>
+          <li><a>Сливочное</a></li>
+      </ul>
+      <div class="site-contacts">
+        <p>С 10 до 20, ежедневно</p>
+        <p>
+          <a href="+78124502525">8 812 450-25-25</a>
+        </p>
+      </div>
+    </section>
     <h1 class="page-title-catalog">Сливочное мороженое</h1>
     <section class="filters-container">
       <h2 class="visually-hidden">Фильтры для поиска</h2>
@@ -190,7 +197,7 @@
                 </li>
                 <li class="filter-check-item">
                   <input class="radio-filter-btn" type="radio" id="radio-fil-1" name="radio-filter-btn" value="10">
-                  <label for="radio-fil-1" tabindex="0">10%</label>
+                  <label for="radio-fil-1" tabindex="0">до 10%</label>
                 </li>
                 <li class="filter-check-item">
                   <input class="radio-filter-btn" type="radio" id="radio-fil-2" name="radio-filter-btn" value="30">
