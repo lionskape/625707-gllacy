@@ -1487,7 +1487,7 @@ td > img {
 .site-wrapper {
     min-width: 940px;
     background-color: #849d8f;
-    background-image: url("img/slider-item1.png");
+    background-image: url("../img/slide-ice-1.png");
     background-repeat: no-repeat;
     background-position: top center;
 
@@ -1503,11 +1503,11 @@ td > img {
 }
 
 .site-wrapper::before {
-    background-image: url("img/slider-item2.png");
+    background-image: url("../img/slide-ice-2.png");
 }
 
 .site-wrapper::after {
-    background-image: url("img/slider-item3.png");
+    background-image: url("../img/slide-ice-3.png");
 }
 
 .container {
