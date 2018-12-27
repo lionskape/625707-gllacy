@@ -836,7 +836,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     top: 100%;
     left: -7px;
-    z-index: 1;
+    z-index: 2;
     display: none;
 
     border-radius: 7px;
@@ -1402,7 +1402,7 @@ td > img {
 }
 
 .basket-button:hover {
-    color: white;
+    color: #000000;
 }
 
 .pushed-basket-button {
