@@ -5,7 +5,7 @@
   <title>Глейси-каталог</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="./css/normolize.css" rel="stylesheet">
-  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/style.min.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
@@ -15,22 +15,64 @@
           <img src="img/header-img/logo.svg" width="154" height="64" alt="Магазин 'Gllacy Shop'">
         </a>
         <ul class="site-navigation-list">
-          <li class="site-navigation-item navigation-active-button"><a href="#"><span>Каталог</span></a></li>
+          <li class="site-navigation-item navigation-active-button user-navigation-popup">
+            <a href="#"><span>Каталог</span></a>
+            <ul class="main-catalog-popup-list">
+              <li class="main-catalog-popup-item catalog-popup-link-header">
+                <p href="#" class="catalog-popup-header-abz">Новинки</p>
+              </li>
+              <li class="main-catalog-popup-item">
+                <a href="#" class="catalog-popup-link">Cливочное</a>
+              </li>
+              <li class="main-catalog-popup-item">
+                <a href="#" class="catalog-popup-link">Щеребты</a>
+              </li>
+              <li class="main-catalog-popup-item">
+                <a href="#" class="catalog-popup-link">Фруктовый лед</a>
+              </li>
+              <li class="main-catalog-popup-item">
+                <a href="#" class="catalog-popup-link">Мелорин</a>
+              </li>
+            </ul>
+          </li>
           <li class="site-navigation-item "><a href="#"><span>Доставка и оплата</span></a></li>
           <li class="site-navigation-item"><a href="#"><span>О Компании</span></a></li>
         </ul>
       </div>
 
       <ul class="user-main-navigation-list">
-        <li class="user-main-navigation-item">
-          <a href="#" class="user-navigation-button search-button">
-            <img src="img/header-img/loop.svg" width="17" height="17" alt="Loop">
+        <li class="user-main-navigation-item user-navigation-popup user-search-popup">
+          <a class="user-navigation-button search-button" tabindex="0">
+            <svg xmlns="" xmlns:xlink="" width="17" height="17" viewBox="0 0 17 17">
+              <path class="takoe" fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
+            </svg>
           </a>
+          <section class="popup search-popup">
+            <form class="search-form" action="#" method="post">
+              <input class="search-popup-field"  type="search" name="search" pattern=".{1,}" placeholder="Что ищем?" required>
+            </form>
+          </section>
         </li>
-        <li class="user-main-navigation-item">
+        <li class="user-main-navigation-item user-navigation-popup user-login-popup">
           <a href="#" class="user-navigation-button login-button">
             Вход
           </a>
+          <section class="popup popup-login">
+            <h2 class="visually-hidden">Вход в личный кабинет</h2>
+            <form class="login-form" action="#" method="post">
+              <label for="popup-user-email" class="visually-hidden">  Электронная почта </label>
+              <input id="popup-user-email" class="popup-email-user" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" placeholder="Электронная почта" required>
+              <label for="password-popup" class="visually-hidden">Пароль</label>
+              <input class="popup-password" id="password-popup" type="password" name="password" pattern=".{6,}" placeholder="Пароль" required>
+              <div class="login-password-info">
+                <button class="btn send-btn login-send-btn" type="submit">Войти</button>
+                <p class="password-links">
+                  <a href="#" class="forget-password-link">Забыли пароль?</a>
+                  <a href="#" class="new-user-link">Новая регистрация</a>
+                </p>
+              </div>
+            </form>
+          </section>
         </li>
         <li class="user-main-navigation-item user-catalog-navigation-popup pushed-basket">
           <a class="user-navigation-button basket-button pushed-basket-button">
@@ -54,7 +96,7 @@
                     <p class="ice-cream-count"><b>1,5 кг х</b> 200 руб</p>
                   </td>
                   <td>
-                    <b>300 руб</b>
+                    <b class="ice-cream-fullP">300 руб</b>
                   </td>
                 </tr>
                 <tr class="basket-catalog-items">
@@ -73,7 +115,7 @@
                       <p class="ice-cream-count"><b>1,5 кг х</b> 300 руб</p>
                   </td>
                   <td>
-                      <b>450 руб</b>
+                      <b class="ice-cream-fullP">450 руб</b>
                   </td>
                 </tr>
               </table>
@@ -89,19 +131,121 @@
     </nav>
   </header>
   <main class="base-container catalog-base">
-
-    <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li>»</li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li>»</li>
-        <li><a>Сливочное</a></li>
-    </ul>
+    <section class="time-info">
+      <ul class="breadcrumbs">
+          <li><a href="index.html">Главная</a></li>
+          <li>»</li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li>»</li>
+          <li><a>Сливочное</a></li>
+      </ul>
+      <div class="site-contacts">
+        <p>С 10 до 20, ежедневно</p>
+        <p>
+          <a href="+78124502525">8 812 450-25-25</a>
+        </p>
+      </div>
+    </section>
     <h1 class="page-title-catalog">Сливочное мороженое</h1>
-    <!-- <p class="main-contacts">
-      <p>C 10 до 20 ежедневно</p>
-      <b>8 812 450 25 25</b>
-    </p> -->
+    <section class="filters-container">
+      <h2 class="visually-hidden">Фильтры для поиска</h2>
+      <form name="filters" method="POST" action="https://echo.htmlacademy.ru">
+        <div class="first-filters-wrapper">
+          <fieldset class="sorting-val">
+            <legend>Сортировка</legend>
+            <div class="filters-wrapper choose-filter">
+              <select class="sorting-filter-val" id="filters-sorting-val" name="filters-sorting-val">
+                <option value="popular">по популярности</option>
+                <option value="not-expensive">сначала не дорогие</option>
+                <option value="expensive"> сначала дорогие</option>
+                <option value="fat-content">по жирности</option>
+              </select>
+              <svg class="select-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path class="select-path" fill="#ffffff" d="M5.5 10L0 0h11"/>
+              </svg>
+            </div>
+          </fieldset>
+
+          <fieldset class="range-val">
+            <legend class="price-input-leg">
+              <span class="range-price">Цена:</span>
+              <label class="price-min">
+                <input type="text" name="price-min" value="100 руб.">
+              </label>
+              <label class="price-max">
+                <input type="text" name="price-max" value="500 руб.">
+              </label>
+            </legend>
+            <div class="filters-wrapper">
+              <div class="range-controls">
+                <div class="scope">
+                  <div class="bbar"></div>
+                </div>
+                <div class="range-tog range-tog-min"></div>
+                <div class="range-tog range-tog-max"></div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="radio-filters">
+            <legend>Жирность:</legend>
+            <div class="filters-wrapper">
+              <ul class="filter-check-list">
+                <li class="filter-check-item">
+                  <input class="radio-filter-btn" type="radio" id="radio-fil-0" name="radio-filter-btn" value="0">
+                  <label for="radio-fil-0" tabindex="0">0%</label>
+                </li>
+                <li class="filter-check-item">
+                  <input class="radio-filter-btn" type="radio" id="radio-fil-1" name="radio-filter-btn" value="10">
+                  <label for="radio-fil-1" tabindex="0">до 10%</label>
+                </li>
+                <li class="filter-check-item">
+                  <input class="radio-filter-btn" type="radio" id="radio-fil-2" name="radio-filter-btn" value="30">
+                  <label for="radio-fil-2" tabindex="0">до 30%</label>
+                </li>
+                <li class="filter-check-item">
+                  <input class="radio-filter-btn" type="radio" id="radio-fil-3" name="radio-filter-btn" value="30+">
+                  <label for="radio-fil-3" tabindex="0">выше 30%</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+
+
+        </div>
+        <div class="second-filters-wrapper">
+          <fieldset class="checkbox-set">
+            <legend>Наполнители</legend>
+            <div class="filters-wrapper">
+              <ul class="filter-check-list">
+                <li class="filter-check-item">
+                  <input class="check-filter-btn" type="checkbox" id="choko-chckbox" name="choko-chckbox" value="chokolate" checked>
+                  <label for="choko-chckbox" tabindex="0">шоколадные</label>
+                </li>
+                <li class="filter-check-item">
+                  <input class="check-filter-btn" type="checkbox" id="shugar-check" name="shugar-check" value="shugar" checked>
+                  <label for="shugar-check" tabindex="0">сахарные присыпки</label>
+                </li>
+                <li class="filter-check-item">
+                  <input class="check-filter-btn" type="checkbox" id="fruits-check" name="fruits-check" value="fruits">
+                  <label for="fruits-check" tabindex="0">фрукты</label>
+                </li>
+                <li class="filter-check-item">
+                  <input class="check-filter-btn" type="checkbox" id="syrup-check" name="syrup-check" value="syrup">
+                  <label for="syrup-check" tabindex="0">сиропы</label>
+                </li>
+                <li class="filter-check-item">
+                  <input class="check-filter-btn" type="checkbox" id="jam-check" name="jam-check" value="jam">
+                  <label for="jam-check" tabindex="0">джемы</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <button class="filters-send" type="submit">Применить</button>
+        </div>
+      </form>
+
+    </section>
     <section class="catalog">
       <h2 class="visually-hidden">Список морженого</h2>
       <ul class="catalog-list">
@@ -286,16 +430,26 @@
           <button class="send-btn catalog-ice-btn">Быстрый просмотр</button>
         </li>
       </ul>
-    </section>
-    <section class="catalog-pagination">
       <ul class="catalog-pagination-list">
-        <li class="catalog-pagination-item"><a href="#"><</a></li>
+        <li class="catalog-pagination-item">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
+              <path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"></path>
+            </svg>
+          </a>
+        </li>
         <li class="catalog-pagination-item catalog-pagination-item-choosed"><a>1</a></li>
         <li class="catalog-pagination-item"><a href="#">2</a></li>
         <li class="catalog-pagination-item"><a href="#">3</a></li>
         <li class="catalog-pagination-item"><a href="#">4</a></li>
         <li class="catalog-pagination-item"><a href="#">5</a></li>
-        <li class="catalog-pagination-item"><a href="#">></a></li>
+        <li class="catalog-pagination-item">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
+              <path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/>
+            </svg>
+          </a>
+        </li>
       </ul>
     </section>
 
@@ -345,10 +499,6 @@
       </div>
     </div>
   </footer>
-  <script src="./js/catScripts.js"></script>
-
-
-  </script>
 </body>
 
 </html>
