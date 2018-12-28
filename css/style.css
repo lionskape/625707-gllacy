@@ -59,7 +59,7 @@ a:active {
 
 
 .send-btn:active {
-    color: #fceeec;
+    color: #ffbc9e;
     background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
     box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
@@ -1313,7 +1313,7 @@ td > img {
 
 .send-btn:hover,
 .send-btn:focus {
-    color: #fceeec;
+  color: #ffbc9e;
     background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
     box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
@@ -1387,16 +1387,28 @@ td > img {
     display: flex;
 }
 
-.user-navigation-popup:hover .main-catalog-popup-list,
-.user-navigation-popup:focus-within .main-catalog-popup-list,
+.user-navigation-popup:focus-within .main-catalog-popup-list {
+    display: block;
+}
+
+.user-navigation-popup:hover .main-catalog-popup-list {
+    display: block;
+}
+
 .user-navigation-popup:active .main-catalog-popup-list {
     display: block;
 }
 
-.user-search-popup:hover .search-popup,
-.user-search-popup:focus-within .search-popup,
-.user-search-popup:active .search-popup {
+.user-search-popup:hover .search-popup {
     display:block;
+}
+
+.user-search-popup:focus-within .search-popup {
+    display: block;
+}
+
+.user-search-popup:active .search-popup {
+    display: block;
 }
 
 .search-button:hover .takoe,
@@ -1404,16 +1416,27 @@ td > img {
     fill: black;
 }
 
-.user-login-popup:hover .popup-login,
-.user-login-popup:focus-within .popup-login,
+.user-login-popup:hover .popup-login {
+    display: block;
+}
+
+.user-login-popup:focus-within .popup-login {
+    display: block;
+}
+
 .user-login-popup:active .popup-login {
     display: block;
 }
 
-.pushed-basket:hover .basket-catalog-popup,
-.pushed-basket:focus-within .basket-catalog-popup,
 .pushed-basket:active .basket-catalog-popup {
     display:block;
+}
+.pushed-basket:hover .basket-catalog-popup {
+    display: block;
+}
+
+.pushed-basket:focus-within .basket-catalog-popup {
+    display: block;
 }
 
 .ice-cream-count {
@@ -1444,6 +1467,7 @@ td > img {
 
     transition: background-image 0.5s ease, background-color 0.5s ease;
     height: 100%;
+    padding-bottom: 10px;
 }
 
 .site-wrapper::before,
@@ -1563,6 +1587,7 @@ td > img {
     background-color: #8996a6;
     background-image: url("../img/slide-ice-2.png");
 }
+
 
 #product-3:checked ~ .site-wrapper {
     background-color: #9d8b84;
