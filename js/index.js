@@ -46,7 +46,7 @@ GL.modalForm.addEventListener('submit', function (e) {
     e.preventDefault();
   } else {
     if (isStorageSupport) {
-      localStorage.setItem("login", GL.modalLogin.value);
+      localStorage.setItem('login', GL.modalLogin.value);
     }
   }
 
