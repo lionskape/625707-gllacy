@@ -1833,7 +1833,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 7px;
-  left: -26px;
+  left: -20px;
   width: 8px;
   height: 8px;
   background-color: rgba(255, 255, 255, .7);
