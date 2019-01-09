@@ -1,7 +1,7 @@
 body {
     margin: 0;
 
-    font-family: "Roboto", "Arial, sans-serif";
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     line-height: 22px;
     font-style: normal;
@@ -1166,7 +1166,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item::after {
     position: absolute;
-    content: '';
+    content: "";
     left: -13px;
     top: -8px;
     width: 293px;
@@ -1256,6 +1256,7 @@ input[type="radio"].visually-hidden {
 
     margin: 0;
     margin-top: -7px;
+    width: 156px;
 }
 
 .map-address {
@@ -1275,7 +1276,7 @@ input[type="radio"].visually-hidden {
 .map-contacts strong {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: -14px;
+    margin-bottom: 4px;
     display: block;
 }
 
@@ -1448,7 +1449,7 @@ input[type="radio"].visually-hidden {
 .slider-wrapper {
     font-size: 18px;
     line-height: 1.2;
-    font-family: Roboto, "Arial", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
 }
 
 .site-wrapper {
