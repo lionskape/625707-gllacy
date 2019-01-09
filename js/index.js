@@ -10,10 +10,10 @@ GL.modalUserName = GL.modalForm.querySelector('[name=user-name]');
 GL.modalUserAbout = GL.modalForm.querySelector('[name=user-text]');
 
 var isStorageSupport = true;
-var storage = "";
+var storage = '';
 
 try {
-  storage = localStorage.getItem("login");
+  storage = localStorage.getItem('login')
 } catch (err) {
   isStorageSupport = false;
 }
@@ -46,7 +46,7 @@ GL.modalForm.addEventListener('submit', function (e) {
     e.preventDefault();
   } else {
     if (isStorageSupport) {
-      localStorage.setItem("login", GL.modalLogin.value);
+      localStorage.setItem('login', GL.modalLogin.value);
     }
   }
 
