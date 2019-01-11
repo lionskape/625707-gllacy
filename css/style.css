@@ -1,7 +1,7 @@
 body {
     margin: 0;
 
-    font-family: "Roboto", "Arial, sans-serif";
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     line-height: 22px;
     font-style: normal;
@@ -208,8 +208,8 @@ a:active {
     margin-bottom: 5px;
 
     padding-left: 20px;
-    margin: 0 0 40px;
-    margin-top: -22px;
+    margin: 0 0 38px;
+    margin-top: -15px;
 }
 
 
@@ -235,7 +235,7 @@ a:active {
     line-height: 22px;
     font-weight: 400;
     margin: 17px 0 0;
-    padding: 0 10px 0 56px;
+    padding: 0 17px 0 56px;
 }
 
 .blog-info {
@@ -298,7 +298,7 @@ a:active {
     font-weight: 400;
 
     width: 1150px;
-    margin: 42px auto 30px;
+    margin: 39px auto 30px;
 }
 
 .for-suppliers {
@@ -308,6 +308,10 @@ a:active {
 
 .main-footer ul {
     list-style: none;
+}
+
+.catalog-footer {
+    margin-top: 34px;
 }
 
 .catalog-pagination-list a {
@@ -502,7 +506,7 @@ a:active {
 
 .banners-wrapper {
     display: flex;
-    margin-bottom: 35px;
+    margin-bottom: 38px;
 }
 
 .main-banner {
@@ -559,11 +563,13 @@ a:active {
 }
 
 .catalog-base {
-  margin-top: 4px;
+    margin-top: 4px;
 }
 
 
 .advantage-header {
+    font-size: 24px;
+    line-height: 30px;
     margin: 0 0 10px 0;
 }
 
@@ -606,8 +612,8 @@ a:active {
 
 .advantage-item:nth-child(4)::before {
     background-image: url("../img/advantage-block/thermometer-advantage.svg");
-    left: 9px;
-    top: 3px;
+    left: 11px;
+    top: 7px;
 }
 
 
@@ -1166,11 +1172,11 @@ input[type="radio"].visually-hidden {
 
 .catalog-item::after {
     position: absolute;
-    content: '';
+    content: "";
     left: -13px;
     top: -8px;
     width: 293px;
-    height: 130%;
+    height: 126%;
     border-radius: 5px;
 }
 
@@ -1229,7 +1235,7 @@ input[type="radio"].visually-hidden {
 .map-legend {
     position: absolute;
     top: 62px;
-    right: 28px;
+    right: 25px;
     width: 306px;
     padding-top: 38px;
     padding-left: 25px;
@@ -1256,6 +1262,7 @@ input[type="radio"].visually-hidden {
 
     margin: 0;
     margin-top: -7px;
+    width: 156px;
 }
 
 .map-address {
@@ -1275,7 +1282,7 @@ input[type="radio"].visually-hidden {
 .map-contacts strong {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: -14px;
+    margin-bottom: 4px;
     display: block;
 }
 
@@ -1448,7 +1455,7 @@ input[type="radio"].visually-hidden {
 .slider-wrapper {
     font-size: 18px;
     line-height: 1.2;
-    font-family: Roboto, "Arial", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
 }
 
 .site-wrapper {
@@ -1461,7 +1468,7 @@ input[type="radio"].visually-hidden {
     transition: background-image 0.5s ease, background-color 0.5s ease;
     height: 100%;
     padding-bottom: 10px;
-    padding-top: 4px
+    padding-top: 7px
 }
 
 .site-wrapper::before,
@@ -1830,14 +1837,14 @@ input[type="radio"].visually-hidden {
 }
 
 .radio-filter-btn:checked+label::after {
-  content: "";
-  position: absolute;
-  top: 7px;
-  left: -20px;
-  width: 8px;
-  height: 8px;
-  background-color: rgba(255, 255, 255, .7);
-  border-radius: 50%;
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -20px;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 50%;
 }
 
 .check-filter-btn {
@@ -1884,6 +1891,20 @@ input[type="radio"].visually-hidden {
     margin-left: -5px;
 }
 
+.filters-send:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.filters-send:active {
+    color: #323232;
+    background-color: #eaeaea;
+    border: 0;
+    -webkit-box-shadow: inset 0 2px 1px 0 #696969;
+    box-shadow: inset 0 2px 1px 0 #696969;
+    padding: 10px 29px;
+}
+
 .time-info {
     display: flex;
     justify-content: space-between;
@@ -1919,8 +1940,8 @@ input[type="radio"].visually-hidden {
 }
 
 .site-contacts p:nth-of-type(2) {
-  padding: 0;
-  margin: -3px;
+    padding: 0;
+    margin: -3px;
 }
 
 .site-contacts a {
@@ -1933,8 +1954,8 @@ input[type="radio"].visually-hidden {
 
 
 .main-index {
-  margin-right: -166px;
-  margin-top: -15px;
+    margin-right: -166px;
+    margin-top: -15px;
 }
 
 .index-contacts {
@@ -1957,21 +1978,29 @@ input[type="radio"].visually-hidden {
     background-image: linear-gradient(to bottom,#9cb0a5 1%,#849d8f 40%);
     background-image: -webkit-gradient(linear,left top,left bottom,color-stop(1%,#9cb0a5),color-stop(40%,#849d8f));
     background-image: -webkit-linear-gradient(top,#9cb0a5 1%,#849d8f 40%);
+    margin-top: 8px;
 }
 
 
 .advantage-item:nth-of-type(2) p {
     padding-left: 69px;
+    margin-top: 13px;
 }
 
 .advantage-item:nth-of-type(4) p {
-  padding-left: 68px;
+    padding-left: 68px;
+    margin-top: 20px;
 }
 
 .advantage-item:nth-of-type(1) p {
-  padding-left: 57px;
+    padding-left: 59px;
+    margin-top: 13px;
+}
+
+.advantage-item:nth-of-type(3) p {
+    margin-top: 20px;
 }
 
 .sorting-filter-val::-ms-expand {
-  display: none;
+    display: none;
 }
